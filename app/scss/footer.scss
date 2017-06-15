@@ -1,0 +1,85 @@
+footer{
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+    background: #ffffff;
+    .webinfo{
+        box-sizing: border-box;
+        height: 350px;
+        background: #373D41;
+        padding: 50px 40px 0;
+        .zhuanlans{
+            float: left;
+            .zhuanlan{
+                float: left;
+                width: 100px;
+                h4{
+                    font-size: 18px;
+                    height: 34px;
+                }
+                ul{
+                    li{
+                        height: 28px;
+                        a{
+                            color: #bbb;
+                        }
+                    }
+                }
+            }
+        }
+        .link{
+            float: left;
+            margin-right: 50px;
+            .market,.email{
+                margin: 0 0 20px 30px;
+            }
+            h2{
+                font-size: 18px;
+                height: 34px;
+            }
+            p{
+                color: #bbb;
+                line-height: 28px;
+            }
+        }
+        .qrcode{
+            ul{
+                li{
+                    float: left;
+                    margin:0 30px;
+                    h2{
+                        font-size: 18px;
+                        height: 34px;
+                    }
+                    .qr{
+                        width: 90px;
+                        height: 90px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        background: #2d3235;
+        font-size: 13px;
+        line-height: 28px;
+        padding: 10px 0;
+        color: #bbb;
+        .company{
+            float: left;
+            span{
+                padding: 0 6px;
+            }
+        }
+        .links{
+            float: right;
+            a{
+                color: #bbb;
+            }
+            span{
+                padding: 0 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import 'base';
+.search{
+    .main{
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .search-l{
+        float: left;
+        height: 43px;
+        line-height: 43px;
+        a{
+            color: #aaaaaa;
+            margin:0 6px;
+            font-size: 12px;
+        }
+    }
+    .search-r{
+        position: relative;
+        float: right;
+        border-bottom: 1px solid transparent;
+        font-size: 0;
+        &:hover{
+            border-bottom: 1px solid $baseColor;
+        }
+        input{
+            vertical-align: middle;
+            width: 250px;
+            height: 43px;
+            padding: 0;
+            outline: none;
+            border: none;
+        }
+        button{
+            vertical-align: middle;
+            display: inline-block;
+            height: 43px;
+            border: 0;
+            background: none;
+            .iconfont{
+                font-size: 24px;
+                color: $baseColor;
+                cursor: pointer;
+                &:hover{
+                    color:#ffb911;
+                }
+            }
+        }
+    }
+}

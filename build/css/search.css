@@ -1,0 +1,19 @@
+.search .main {
+  border-bottom: 1px solid #e9e9e9; }
+
+.search .search-l {
+  float: left;
+  height: 43px;
+  line-height: 43px; }
+  .search .search-l a {
+    color: #aaaaaa;
+    margin: 0 6px;
+    font-size: 12px; }
+
+.search .search-r {
+  float: right; }
+  .search .search-r input {
+    height: 43px;
+    padding: 0;
+    outline: none;
+    border: none; }

@@ -1,0 +1,14 @@
+header .logo {
+  float: left;
+  width: 200px;
+  height: 80px; }
+
+header .banner {
+  width: 620px;
+  float: left;
+  height: 80px; }
+
+header .link {
+  width: 320px;
+  float: left;
+  height: 80px; }

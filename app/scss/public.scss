@@ -1,0 +1,93 @@
+@import 'base';
+@import 'mixin';
+@import 'top';
+@import 'header';
+@import 'main-nav';
+@import 'search';
+@import 'news';
+@import 'getmore';
+@import 'footer';
+html,body{
+    font-family: "Open Sans",Arial,"Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-size: 14px;
+}
+// **********hover过度效果***************
+a{
+    transition: all .2s ease;
+    cursor: pointer;
+    color: #353535;  
+    &:hover{
+        color: $baseColor;
+    }
+}
+
+// **********main主内容宽度************
+.main{
+    width: $baseWidth;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.panel-title{
+    font-size: 21px;
+    font-weight: normal;
+    height: 36px;
+    a{
+        float: right;
+        font-size: 14px;
+        color: $baseColorPrey;
+    }
+}
+
+// ************新闻panel样式**************
+.panel-prey{
+    background: #f2f2f2;
+}
+.panel-avatar{
+    padding: 15px 0;
+    border-top: 1px solid #e9e9e9;
+}
+.panel{
+    @extend .clearfix;
+    line-height: 24px;
+    padding-right: 10px;
+    .avatar{
+        float: right;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .news-img{
+        float: left;
+        width: 120px;
+        height: 72px;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+    .news{
+        overflow: hidden;
+        line-height: 24px;
+    }
+    h1{
+        font-size: 18px;
+        color: $baseColor;
+        margin-bottom: 6px;
+        line-height: 28px;
+        a{
+            padding-left: 10px;
+            font-size: $baseFontSizeSmall;
+            color: #888888;
+        }
+    }
+    .content{
+    }
+}
+
+.news-list{
+    margin-top: 10px;
+    li{
+        line-height: 32px;
+        padding-left: 10px;
+        @extend %text-overflow;
+    }
+}

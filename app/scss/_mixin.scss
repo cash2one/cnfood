@@ -1,0 +1,24 @@
+@import 'base';
+// *************清除浮动*********
+.clearfix{
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+%text-overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+

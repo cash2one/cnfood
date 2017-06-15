@@ -1,0 +1,268 @@
+@import 'base';
+.main-news{
+    margin-top: 20px;
+    .fixed{
+        position: fixed;
+        top: 0;
+        z-index: 0;
+    }
+    .mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ 
+        background-color: rgba(172,172,172,.5); 
+    }
+    .mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail{
+         background-color: white; 
+    } 
+    .news-l{
+        width: 200px;
+        height: 800px;
+        float: left;
+        .content{
+            height: 800px;
+            width: 210px;
+        }
+        .mCSB_inside>.mCSB_container{
+            margin-right: 9px;
+        }
+        .fixed-box{
+            .news{
+                line-height: 21px;
+                padding: 0 0 10px 15px;
+                border-left: 1px solid #e9e9e9;
+                margin-left: 10px;
+                &:hover{
+                    background: #f2f2f2;
+                }
+                .date{
+                    margin-left: -21px;
+                    .iconfont{
+                        color: $baseColor;
+                        font-size: 12px;
+                        margin-right: 4px;
+                    }
+                }
+                .info{
+                    line-height: 21px;
+                    font-size: 13px;
+                } 
+            }
+        }
+    }
+    .news-r{
+        width: 950px;
+        float: right;
+        .news-r-l{
+            width: 620px;
+            float: left;
+            .banner{
+                width: 620px;
+                height: 310px;
+                overflow: hidden;
+            }
+            .hot-news{
+                display: inline-block;
+                margin: 15px 0;
+                font-size: 22px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            .hot-news-list{
+                font-size: 0;
+                li{
+                    width: 50%;
+                    line-height: 30px;
+                    float: left;
+                    font-size: 14px;
+                }
+            }
+            .news-tab{
+                line-height: 40px;
+                margin-top: 20px;
+                ul{
+                    li{
+                        width: 12.5%;
+                        float: left;
+                        color: #787878;
+                        background: #f2f2f2;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .selected{
+                        background: $baseColor;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .get-more{
+                margin-top: 15px;
+            }
+        }
+        .news-r-r{
+            width: 300px;
+            float: right;
+            .item{
+                margin-bottom: 20px;
+            }
+             .big-img{
+                width: 300px;
+                height: 150px;
+            }
+            .banner{
+                width: 100%;
+                height: 80px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+// **************大标题样式***************
+.h2-title{
+    height: 60px;
+    line-height: 60px;
+    margin: 24px 0;
+    font-size: 28px;
+    border-bottom: 2px solid #e9e9e9;
+    font-weight: bold;
+    color: #353535;
+    span{
+        float: right;
+        a{
+            font-size: 15px;
+            color: #888;
+            font-weight: normal;
+        }
+
+    }
+}
+
+// ***************覆盖fixed-box的样式**************
+.over-fixed-box{
+    position: relative;
+    z-index: 10;
+    background: #ffffff;
+}
+// *****************企业样式***************
+.company{
+    .company-l,.company-m,.company-r{
+        float: left;
+        .title{
+            display: block;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+    }
+    .company-l{
+        width: 420px;
+        margin-right: 45px;
+        .news{
+            position: relative;
+            overflow: hidden;
+            padding: 16px 0;
+            border-bottom: 1px solid #e9e9e9;
+            .news-img{
+                float: left;
+                width: 140px;
+                height: 90px;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+            .short-cut{
+                overflow: hidden;
+                font-size: 14px;
+                line-height: 22px;  
+                margin-bottom: 30px;  
+            }
+            .tags{
+                position: absolute;
+                box-sizing: border-box;
+                bottom: 16px;
+                margin-left: 150px;
+                padding-right: 150px;
+                width: 100%;
+                font-size: 12px;
+                color: #999;
+                .tag{
+                    margin-right: 5px;
+                }
+                .date{
+                    float: right;
+                }
+            }
+        }
+    }
+    .company-m{
+        width: 360px;
+        margin-right: 45px;
+        .info{
+            .intro{
+                display: block;
+                line-height: 24px;
+                margin: 16px 0;
+            }
+            .img{
+                display: block;
+                overflow: hidden;
+                height: 158px;
+            }
+        }
+    }
+    .company-r{
+        width: 310px;
+        ul{
+            margin-top: 30px;
+            li{
+                width: 30%;
+                height: 30px;
+                float: left;
+            }
+        }
+    }
+}
+
+// ***************生活********************
+.list{
+    margin-right: -26px;
+    padding-bottom: 40px;
+    .big{
+        float: left;
+        margin-right: 26px;
+        width: 248px;
+        height: 248px;
+        overflow: hidden;
+        position: relative;
+        .footer{
+            position: absolute;
+            line-height: 22px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,.6);
+            color: #ffffff;
+            padding: 0 10px;
+        }
+    }
+    .news{
+        float: left;
+        margin-right: 26px;
+        width: 280px;
+        height: 248px;
+        .img{
+            height: 138px;
+            overflow: hidden;
+        }
+        .footer{
+            font-size: 16px;
+            line-height: 24px;
+            box-sizing: border-box;
+            height: 110px;
+            padding: 24px 16px 18px;
+            background: rgba(0,0,0,.6);
+            a{
+                color: #ffffff;            
+            }
+            .tags{
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+    }
+}

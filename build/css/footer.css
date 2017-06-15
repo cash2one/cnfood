@@ -1,0 +1,60 @@
+footer {
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  background: #ffffff; }
+  footer .webinfo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 350px;
+    background: #373D41;
+    padding: 50px 40px 0; }
+    footer .webinfo .zhuanlans {
+      float: left; }
+      footer .webinfo .zhuanlans .zhuanlan {
+        float: left;
+        width: 100px; }
+        footer .webinfo .zhuanlans .zhuanlan h4 {
+          font-size: 18px;
+          height: 34px; }
+        footer .webinfo .zhuanlans .zhuanlan ul li {
+          height: 28px; }
+          footer .webinfo .zhuanlans .zhuanlan ul li a {
+            color: #bbb; }
+    footer .webinfo .link {
+      float: left;
+      margin-right: 50px; }
+      footer .webinfo .link .market, footer .webinfo .link .email {
+        margin: 0 0 20px 30px; }
+      footer .webinfo .link h2 {
+        font-size: 18px;
+        height: 34px; }
+      footer .webinfo .link p {
+        color: #bbb;
+        line-height: 28px; }
+    footer .webinfo .qrcode ul li {
+      float: left;
+      margin: 0 30px; }
+      footer .webinfo .qrcode ul li h2 {
+        font-size: 18px;
+        height: 34px; }
+      footer .webinfo .qrcode ul li .qr {
+        width: 90px;
+        height: 90px;
+        overflow: hidden; }
+  footer .footer {
+    background: #2d3235;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 10px 0;
+    color: #bbb; }
+    footer .footer .company {
+      float: left; }
+      footer .footer .company span {
+        padding: 0 6px; }
+    footer .footer .links {
+      float: right; }
+      footer .footer .links a {
+        color: #bbb; }
+      footer .footer .links span {
+        padding: 0 15px; }

@@ -1,0 +1,35 @@
+@import 'base';
+// **********top样式**********
+.top{
+    position: fixed;
+    top: 0;
+    background: #0d5f96;
+    width: 100%;
+    z-index: 1000;
+    transition: all .4s;
+    .top-wrap{
+        color: #ffffff;
+        margin: 0 auto;
+        width: $baseWidth;
+        .top-left{
+            float: left;
+            .logo{
+                display: none;
+            }
+        }
+        .top-right{
+            float: right;
+        }
+        ul{
+            li{
+                float: left;
+                margin-right: 15px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+.top-hide{
+    top: -40px;
+}

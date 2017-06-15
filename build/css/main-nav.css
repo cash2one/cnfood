@@ -1,0 +1,16 @@
+.main-nav {
+  color: #000000;
+  background: #f5f5f5; }
+  .main-nav .main {
+    height: 50px;
+    line-height: 50px; }
+    .main-nav .main a {
+      margin: 0 5px;
+      color: #353535; }
+    .main-nav .main .splice {
+      margin: 0 12px; }
+    .main-nav .main .big {
+      margin-left: 0;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000000; }
