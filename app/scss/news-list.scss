@@ -1,0 +1,35 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+.page-content{
+    @extend .clearfix;
+    margin-top: 20px;
+    .left{
+        float: left;
+        width: 850px;
+        .nav{
+            height: 40px;
+            line-height: 40px;
+            margin-top: -10px;
+            color: $baseColorPreyMid;
+            .iconfont,span,a{
+                color: $baseColorPreyMid;
+            }
+            .iconfont{
+                margin-right: 5px;
+            }
+            span{
+                margin: 0 5px;
+            }
+        }
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+    }
+    .right{
+        float: right;
+        width: 300px;
+    }
+}
