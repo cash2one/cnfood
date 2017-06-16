@@ -1,6 +1,7 @@
 @import 'header-bottom-line';
 @import "mixin";
 @import 'base';
+@import 'top-list';
 .page-content{
     @extend .clearfix;
     margin-top: 20px;
@@ -31,5 +32,8 @@
     .right{
         float: right;
         width: 300px;
+        .ad{
+            margin-bottom: 20px;
+        }
     }
 }

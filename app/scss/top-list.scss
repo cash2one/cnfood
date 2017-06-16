@@ -1,0 +1,30 @@
+@import "mixin";
+
+.top-list-box{
+    .top-list{
+        li{
+            i{
+                font-style: italic;
+                font-family: 'Georgia';
+                opacity: 0.7;
+                display: block;
+                float: left;
+                height: 24px;
+                width: 20px;
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: 4px;
+                margin-right: 10px;
+                color: #666;
+            }
+            .order1,.order2,.order3{
+                color: #c63927;
+                font-size: 24px;
+            }
+            a{
+                @extend %text-overflow;
+            }
+        }
+    }
+}

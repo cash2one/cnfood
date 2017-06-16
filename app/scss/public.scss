@@ -34,14 +34,23 @@ a{
     font-size: 21px;
     font-weight: normal;
     height: 36px;
-    a{
+    .more{
         float: right;
         font-size: 14px;
         color: $baseColorPreyMid;
     }
+    .box-r{
+        float: right;
+        a{
+            font-size: 16px;
+        }
+        span{
+            padding: 0 10px;
+        }
+    }
 }
 .panel-title-bottom-line{
-    border-bottom: 1px solid $baseColorPreyMid; 
+    border-bottom: 1px solid $baseColorPreyTint; 
 }
 // ************新闻panel样式**************
 .panel-prey{
