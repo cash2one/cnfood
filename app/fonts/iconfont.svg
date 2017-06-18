@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Fri Jun 16 10:29:47 2017
+Created by FontForge 20120731 at Sat Jun 17 18:06:47 2017
  By admin
 </metadata>
 <defs>
@@ -19,7 +19,7 @@ Created by FontForge 20120731 at Fri Jun 16 10:29:47 2017
     bbox="0 -128 1024 898"
     underline-thickness="0"
     underline-position="0"
-    unicode-range="U+0078-E6F6"
+    unicode-range="U+0078-E6F8"
   />
 <missing-glyph 
  />
@@ -71,5 +71,9 @@ q-2 0 -6 -1h-5q-66 -11 -116 -53q-19 -12 -39.5 -41t-32.5 -64q-1 3 -3 -3q-10 -24 -
 q25 48 26 104v-7z" />
     <glyph glyph-name="quan-copy" unicode="&#xe65a;" 
 d="M512 688q126 0 214.5 -88.5t88.5 -214t-88.5 -214.5t-214.5 -89t-214.5 89t-88.5 214.5t88.5 214t214.5 88.5z" />
+    <glyph glyph-name="arrow-right" unicode="&#xe6f7;" 
+d="M752 384q0 -24 -17 -42l-362 -361q-18 -18 -42 -18t-41.5 17.5t-17.5 42t17 41.5l321 320l-321 320q-17 17 -17 41.5t17.5 42t41.5 17.5t42 -18l362 -361q17 -18 17 -42z" />
+    <glyph glyph-name="arrow-left-copy" unicode="&#xe6f8;" 
+d="M272 384q0 24 17 42l362 361q18 18 42 18t41.5 -17.5t17.5 -42t-17 -41.5l-321 -320l321 -320q17 -17 17 -41.5t-17.5 -42t-41.5 -17.5t-42 18l-362 361q-17 18 -17 42z" />
   </font>
 </defs></svg>

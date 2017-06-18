@@ -1,0 +1,76 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0; }
+
+.img-responsive, .channel-focus .channel-swiper .focusimg img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.channel-focus {
+  position: relative;
+  margin-bottom: 40px;
+  height: 300px; }
+  .channel-focus .channel-swiper .headline, .channel-focus .channel-swiper .focusimg {
+    height: 300px;
+    overflow: hidden; }
+  .channel-focus .channel-swiper .headline {
+    float: left;
+    width: 500px;
+    padding-top: 52px;
+    color: #777; }
+    .channel-focus .channel-swiper .headline .title {
+      font-size: 24px;
+      line-height: 32px; }
+    .channel-focus .channel-swiper .headline .desc {
+      padding-top: 20px;
+      font-size: 15px;
+      line-height: 28px; }
+    .channel-focus .channel-swiper .headline .p {
+      font-size: 20px;
+      font-style: italic;
+      font-family: 'Georgia';
+      text-align: right;
+      margin-top: -20px;
+      color: #999; }
+      .channel-focus .channel-swiper .headline .p .current {
+        font-size: 40px;
+        color: #089AFD; }
+  .channel-focus .channel-swiper .focusimg {
+    float: right;
+    width: 600px;
+    overflow: hidden; }
+  .channel-focus .pagination {
+    position: absolute;
+    z-index: 200;
+    bottom: 15px;
+    right: 10px; }
+    .channel-focus .pagination .swiper-pagination-switch {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      background: #ffffff;
+      opacity: 0.4; }
+    .channel-focus .pagination .swiper-active-switch {
+      opacity: 1; }
+  .channel-focus .icon-arrow-left-copy, .channel-focus .icon-arrow-right {
+    position: absolute;
+    z-index: 200;
+    display: block;
+    text-align: center;
+    width: 45px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    opacity: .4;
+    top: 129px; }
+  .channel-focus .icon-arrow-left-copy {
+    left: 580px; }
+  .channel-focus .icon-arrow-right {
+    right: 0; }

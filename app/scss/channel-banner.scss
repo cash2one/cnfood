@@ -1,0 +1,86 @@
+@import "mixin";
+@import "base";
+// **************频道页banner*******************
+.channel-focus{
+    position: relative;
+    margin-bottom: 40px;
+    height: 300px;
+    .channel-swiper{
+        .headline,.focusimg{
+            height: 300px;
+            overflow: hidden;
+        }
+        .headline{
+            float: left;
+            width: 500px;
+            padding-top: 52px;
+            color: #777;
+            .title{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .desc{
+                padding-top:20px;
+                font-size: 15px;
+                line-height: 28px;
+            }
+            .p{
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Georgia';
+                text-align: right;
+                margin-top: -20px;
+                color: #999;
+                .current{
+                    font-size: 40px;
+                    color:$baseColor;
+                }
+            }
+        }
+        .focusimg{
+            float: right;
+            width: 600px;
+            overflow: hidden;
+            img{
+                @extend .img-responsive;
+            }
+        }
+    }
+    .pagination{
+        position: absolute;
+        z-index: 200;
+        bottom: 15px;
+        right:10px;
+        .swiper-pagination-switch{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            background: #ffffff;
+            opacity: 0.4;
+        }
+        .swiper-active-switch{
+            opacity: 1;
+        }
+    }
+    .icon-arrow-left-copy,.icon-arrow-right{
+        position: absolute;
+        z-index: 200;
+        display: block;
+        text-align: center;
+        width: 45px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 20px;
+        color: #ffffff;
+        background: #000000;
+        opacity: .4;
+        top: 129px;
+    }
+    .icon-arrow-left-copy{
+        left: 580px;
+    }
+    .icon-arrow-right{
+        right: 0;
+    }
+}

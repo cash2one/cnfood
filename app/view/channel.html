@@ -2,6 +2,7 @@
 
 
 <link rel="stylesheet" href="../css/news-list.css">
+<link href="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.css" rel="stylesheet">
 </head>
 <body>
     <include "../template/top.html">
@@ -9,13 +10,10 @@
     <include "../template/search-left.html">
     <div class="page-content">
         <div class="main">
+           <include "../template/channel-banner.html">        
+        </div>
+        <div class="main">
             <div class="left">
-                <div class="nav">
-                    <i class="iconfont icon-fangzi"></i>
-                    <a>投资界</a><span>></span>
-                    <a>投资</a><span>></span>
-                    <a>天使投资</a>
-                </div>
                 <div class="news-box">
                     <include "../template/news.html">
                     <include "../template/news.html"> 
@@ -41,9 +39,6 @@
                 <include "../template/paging.html">
             </div>
             <div class="right">
-                <div class="ad">
-                    <img src="../images/0f0005w9PFlEDxmOEZ5Wjf.jpg" alt="">
-                </div>
                 <h1 class="panel-title panel-title-bottom-line">TOPS 
                     <div class="box-r">
                         <span class="top-name">日排行</span><span class="split">/</span>
@@ -70,5 +65,9 @@
         </div>
     </div>
     <include "../template/footer.html">
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/channel.js"></script>
 </body>
 </html>

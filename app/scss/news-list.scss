@@ -1,10 +1,11 @@
 @import 'header-bottom-line';
 @import "mixin";
 @import 'base';
-@import 'top-list';
+@import "top-list.scss";
+@import "page-list.scss";
 .page-content{
     @extend .clearfix;
-    margin-top: 20px;
+    margin-top: 22px;
     .left{
         float: left;
         width: 850px;
