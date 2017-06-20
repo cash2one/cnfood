@@ -1,0 +1,19 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+.page-content{
+    .left{
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+    }
+    .right{
+        .ad{
+            margin-bottom: 20px;
+        }
+    }
+}
