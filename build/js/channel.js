@@ -5,14 +5,11 @@ $(function () {
         autoplay: 3000,
         loop: true,
         pagination: '.pagination',
-        autoplayDisableOnInteraction: false
+        autoplayDisableOnInteraction: false,
+        paginationClickable: true
     });
-    var leftArrow = $('.channel-focus .icon-arrow-left-copy');
-    var rightArrow = $('.channel-focus .icon-arrow-right');
-    leftArrow.click(function () {
-        mySwiper.swipePrev();
-    });
-    rightArrow.click(function () {
-        mySwiper.swipeNext();
-    });
+    // 初始化轮播图左右箭头
+    cnfood.initSwiperArrow(mySwiper);
+    // 鼠标经过分页器换页
+    cnfood.paginationHover(mySwiper);
 });

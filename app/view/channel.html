@@ -41,12 +41,16 @@
             <div class="right">
                 <h1 class="panel-title panel-title-bottom-line">TOPS 
                     <div class="box-r">
-                        <span class="top-name">日排行</span><span class="split">/</span>
+                        <span class="top-name selected">日排行</span><span class="split">/</span>
                         <span class="top-name">周排行</span><span class="split">/</span>
                         <span class="top-name">原创</span>
                     </div>
                 </h1>
-                <include "../template/top-list.html">
+                <div class="toplist-toggle">
+                    <include "../template/top-list.html">
+                    <include "../template/top-list-hide.html">
+                    <include "../template/top-list-hide.html">
+                </div>
                 <div class="item">
                     <h1 class="panel-title">巨头<a href="javascript:;" class="more">MORE+</a></h1>
                     <div class="panel panel-prey">

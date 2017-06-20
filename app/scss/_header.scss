@@ -4,15 +4,16 @@ header{
     margin-top: 40px;
     padding: 15px 0;
     text-align: center;
-    .logo-img,.banner,.link{
+    .logo-img,.ad,.link{
         float: left;
+        overflow: hidden;
     }
     .logo-img{
         width: 200px;
         height: 80px;
         margin-right: 30px;
     }
-    .banner{
+    .ad{
         width: 620px;
         height: 80px;
     }

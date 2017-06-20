@@ -12,7 +12,8 @@
         a{
             color: #aaaaaa;
             margin:0 6px;
-            font-size: 12px;
+            font-size: 13px;
+            @extend %a-hover;
         }
     }
     .search-left-l{

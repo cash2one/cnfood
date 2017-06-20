@@ -10,10 +10,10 @@
     <div class="page-content">
         <div class="main">
             <div class="left">
-                <div class="nav">
+                <div class="title-nav">
                     <i class="iconfont icon-fangzi"></i>
-                    <a>投资界</a><span>></span>
-                    <a>投资</a><span>></span>
+                    <a>投资界</a><span class="split">></span>
+                    <a>投资</a><span class="split">></span>
                     <a>天使投资</a>
                 </div>
                 <div class="news-box">
@@ -46,12 +46,16 @@
                 </div>
                 <h1 class="panel-title panel-title-bottom-line">TOPS 
                     <div class="box-r">
-                        <span class="top-name">日排行</span><span class="split">/</span>
+                        <span class="top-name selected">日排行</span><span class="split">/</span>
                         <span class="top-name">周排行</span><span class="split">/</span>
                         <span class="top-name">原创</span>
                     </div>
                 </h1>
-                <include "../template/top-list.html">
+                <div class="toplist-toggle">
+                    <include "../template/top-list.html">
+                    <include "../template/top-list-hide.html">
+                    <include "../template/top-list-hide.html">
+                </div>
                 <div class="item">
                     <h1 class="panel-title">巨头<a href="javascript:;" class="more">MORE+</a></h1>
                     <div class="panel panel-prey">
@@ -70,5 +74,7 @@
         </div>
     </div>
     <include "../template/footer.html">
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../js/public.js"></script>
 </body>
 </html>

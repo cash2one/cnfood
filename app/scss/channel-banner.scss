@@ -46,41 +46,12 @@
             }
         }
     }
-    .pagination{
-        position: absolute;
-        z-index: 200;
-        bottom: 15px;
-        right:10px;
-        .swiper-pagination-switch{
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin-right: 5px;
-            background: #ffffff;
-            opacity: 0.4;
-        }
-        .swiper-active-switch{
-            opacity: 1;
-        }
-    }
-    .icon-arrow-left-copy,.icon-arrow-right{
-        position: absolute;
-        z-index: 200;
-        display: block;
-        text-align: center;
-        width: 45px;
-        height: 42px;
-        line-height: 42px;
-        font-size: 20px;
-        color: #ffffff;
-        background: #000000;
-        opacity: .4;
-        top: 129px;
-    }
     .icon-arrow-left-copy{
+        top: 129px;
         left: 580px;
     }
     .icon-arrow-right{
+        top: 129px;
         right: 0;
     }
 }

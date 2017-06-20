@@ -27,7 +27,7 @@ header {
       header .link ul li div {
         line-height: 28px; }
 
-.clearfix:after, .page-content:after {
+.clearfix:after {
   content: '';
   display: block;
   clear: both;
@@ -44,7 +44,7 @@ header {
   width: 100%;
   height: auto; }
 
-.clearfix:after, .page-content:after {
+.clearfix:after {
   content: '';
   display: block;
   clear: both;
@@ -105,26 +105,8 @@ header {
   .paging .next, .paging .prev {
     width: 60px; }
 
-.page-content {
-  margin-top: 22px; }
-  .page-content .left {
-    float: left;
-    width: 850px; }
-    .page-content .left .nav {
-      height: 40px;
-      line-height: 40px;
-      margin-top: -10px;
-      color: #999999; }
-      .page-content .left .nav .iconfont, .page-content .left .nav span, .page-content .left .nav a {
-        color: #999999; }
-      .page-content .left .nav .iconfont {
-        margin-right: 5px; }
-      .page-content .left .nav span {
-        margin: 0 5px; }
-    .page-content .left .news-item h1 {
-      font-weight: normal; }
-  .page-content .right {
-    float: right;
-    width: 300px; }
-    .page-content .right .ad {
-      margin-bottom: 20px; }
+.page-content .left .news-item h1 {
+  font-weight: normal; }
+
+.page-content .right .ad {
+  margin-bottom: 20px; }

@@ -1,7 +1,7 @@
 @import 'base';
 @import 'mixin';
 @import 'top';
-// @import 'header';
+@import 'header';
 @import 'main-nav';
 @import 'search';
 @import 'news';
@@ -11,6 +11,10 @@
 html,body{
     font-family: "Open Sans",Arial,"Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
     font-size: 14px;
+    color: #353535;
+}
+div{
+    line-height: 28px;
 }
 *{
     box-sizing: border-box;
@@ -19,12 +23,18 @@ html,body{
 a{
     transition: all .2s ease;
     cursor: pointer;
-    color: #353535;  
-    &:hover{
-        color: $baseColor;
-    }
+    color: #353535;
+    @extend %a-hover;
 }
-
+// ************基本样式*****************
+.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+.hide{
+    display: none;
+}
 // **********main主内容宽度************
 .main{
     width: $baseWidth;
@@ -43,6 +53,9 @@ a{
     .box-r{
         float: right;
         font-size: 16px;
+        .selected{
+            color: $baseColor;
+        }
         .top-name{
             cursor: pointer;
         }
@@ -112,3 +125,75 @@ a{
 }
 
 
+// *****************主要布局********************
+.page-content{
+    @extend .clearfix;
+    margin-top: 22px;
+    .left{
+        float: left;
+        width: 850px;
+    }
+    .right{
+        float: right;
+        width: 300px;
+    }
+}
+// **************文章导航************************
+.title-nav{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    margin-top: -10px;
+    width: 100%;
+    font-size: 14px;
+    color: $baseColorPreyMid;
+    .iconfont{
+        margin-right: 5px;
+    }
+    .split{
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    a{
+        color: $baseColorPreyMid;
+        @extend %a-hover;        
+    }
+}
+
+// ***************轮播左右箭头*******************
+.icon-arrow-left-copy,.icon-arrow-right{
+    position: absolute;
+    z-index: 200;
+    display: block;
+    text-align: center;
+    width: 45px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    opacity: .2;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        opacity: .5;
+    }
+}
+// *****************轮播索引*********************
+.pagination{
+    position: absolute;
+    z-index: 200;
+    bottom: 15px;
+    right:10px;
+    .swiper-pagination-switch{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background: #ffffff;
+        opacity: 0.4;
+    }
+    .swiper-active-switch{
+        opacity: 1;
+    }
+}
