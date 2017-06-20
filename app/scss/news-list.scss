@@ -15,5 +15,51 @@
         .ad{
             margin-bottom: 20px;
         }
+        .panel-title{
+            .pagination{
+                float: right;
+                position: static;
+                .swiper-pagination-switch{
+                    background: $baseColor;
+                }
+            }
+        }
+        .scroll-focus{
+            margin-top: 20px;
+            .swiper-container{
+                height: 400px;
+                ul{
+                    .img{
+                        float: left;
+                        margin: 0px 15px 15px 0;
+                        text-align: center;
+                        width: 85px;
+                        height: 120px;
+                        display: block;
+                        background: none;
+                        overflow: hidden;
+                        position: relative; 
+                        &:hover{
+                            opacity: .8;
+                        }                  
+                        img{
+                            width: 85px;
+                            height: 85px;
+                            border-radius: 50%;
+                            display: block;
+                        }
+                        .name{
+                            height: 30px;
+                            line-height: 35px;
+                            font-size: 13px;
+                            background: none;
+                            margin-top: -3px;
+                            color: #333;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

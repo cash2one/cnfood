@@ -65,7 +65,8 @@ header {
       .main-news .news-l .fixed-box .news:hover {
         background: #f2f2f2; }
       .main-news .news-l .fixed-box .news .date {
-        margin-left: -21px; }
+        margin-left: -21px;
+        color: #999999; }
         .main-news .news-l .fixed-box .news .date .iconfont {
           color: #089AFD;
           font-size: 12px;

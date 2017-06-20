@@ -3,13 +3,20 @@ var cnfood = {
     scrollDirection: function (upfunc, downfunc) {
         // **************判断向上还是向下滚****************************
         if (typeof upfunc !== 'function' && typeof downfunc !== 'function') return;
+        var topEL = $('.top');
         $(window).on('scroll', function () {
             var newScrollTop = $(this).scrollTop();
             if (newScrollTop > cnfood.oldScrollTop) {
                 // console.log('向下滑')
+                if (!topEL.hasClass('top-hide')) {
+                    topEL.addClass('top-hide');
+                }
                 downfunc();
             } else if (newScrollTop < cnfood.oldScrollTop) {
                 // console.log('向上滑')
+                if (topEL.hasClass('top-hide')) {
+                    topEL.removeClass('top-hide');
+                }
                 upfunc();
             }
             setTimeout(function () {
@@ -33,16 +40,18 @@ var cnfood = {
             }
         })
     },
-    fixedBox: function (el) {
-        var fixedwrap = $('.top-linkage');
+    fixedBox: function (el, toggleTop) {
+        if (el.length <= 0) return;
+        if (toggleTop instanceof $) {
+            toggleTop = toggleTop.offset().top;
+        }
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
-            var offset = el.offset();
-            var top = offset.top - scrollTop;
+            var top = toggleTop - scrollTop;
             if (top <= 0) {
-                fixedwrap.addClass('fixed');
+                el.addClass('fixed');
             } else {
-                fixedwrap.removeClass('fixed');
+                el.removeClass('fixed');
             }
         })
     },
@@ -66,29 +75,24 @@ var cnfood = {
             })
         })
     },
-    paginationHover:function(swiper){
+    paginationHover: function (swiper) {
         var page = $('.pagination span');
-        page.mouseover(function(){
+        page.mouseover(function () {
             $(this).click();
         })
     }
 }
 
 $(function () {
-    var topEL = $('.top');
-    var linkage = $('.top-linkage');
-    // 初始化上下滚动事件
+    // tops
+    var tops = $('.tops-box');
     cnfood.scrollDirection(function () {
-        if (topEL.hasClass('top-hide')) {
-            topEL.removeClass('top-hide');
-            linkage.css('top', '40px');
-        }
+        tops.css('top','50px')
     }, function () {
-        if (!topEL.hasClass('top-hide')) {
-            topEL.addClass('top-hide');
-            linkage.css('top', '0');
-        }
+        tops.css('top','0')
     });
+    // 初始化上下滚动事件
+    cnfood.fixedBox($('.tops-box'), $('.tops-box'))
     // 切换logo
     cnfood.hideLogo();
     // 初始化切换tops

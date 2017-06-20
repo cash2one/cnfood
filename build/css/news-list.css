@@ -110,3 +110,39 @@ header {
 
 .page-content .right .ad {
   margin-bottom: 20px; }
+
+.page-content .right .panel-title .pagination {
+  float: right;
+  position: static; }
+  .page-content .right .panel-title .pagination .swiper-pagination-switch {
+    background: #089AFD; }
+
+.page-content .right .scroll-focus {
+  margin-top: 20px; }
+  .page-content .right .scroll-focus .swiper-container {
+    height: 400px; }
+    .page-content .right .scroll-focus .swiper-container ul .img {
+      float: left;
+      margin: 0px 15px 15px 0;
+      text-align: center;
+      width: 85px;
+      height: 120px;
+      display: block;
+      background: none;
+      overflow: hidden;
+      position: relative; }
+      .page-content .right .scroll-focus .swiper-container ul .img:hover {
+        opacity: .8; }
+      .page-content .right .scroll-focus .swiper-container ul .img img {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        display: block; }
+      .page-content .right .scroll-focus .swiper-container ul .img .name {
+        height: 30px;
+        line-height: 35px;
+        font-size: 13px;
+        background: none;
+        margin-top: -3px;
+        color: #333;
+        overflow: hidden; }

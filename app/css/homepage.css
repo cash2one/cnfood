@@ -105,44 +105,68 @@ header {
   .paging .next, .paging .prev {
     width: 60px; }
 
+.people {
+  padding: 20px 20px 10px 20px;
+  background: rgba(229, 229, 229, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 415px;
+  width: 170px;
+  z-index: 200; }
+  .people .avatar {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%; }
+  .people .name {
+    display: block;
+    font-size: 24px;
+    padding: 15px 20px;
+    text-align: center; }
+  .people .udesc {
+    font-size: 14px;
+    line-height: 24px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 128px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .people .udesc:hover {
+      width: 450px;
+      background: rgba(229, 229, 229, 0.9);
+      padding-top: 20px;
+      padding-right: 20px;
+      z-index: 1000;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+  .people .ubotton .unum {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #999;
+    margin: 5px 0px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 13px; }
+    .people .ubotton .unum .num {
+      color: #c84044;
+      font-size: 14px;
+      font-family: 'Georgia';
+      padding-right: 5px; }
+
+.page-content .left .left-l {
+  float: left;
+  width: 190px;
+  padding-right: 20px;
+  height: 800px; }
+
+.page-content .left .left-r {
+  float: right;
+  width: 650px; }
+
 .page-content .left .news-item h1 {
   font-weight: normal; }
 
 .page-content .right .ad {
   margin-bottom: 20px; }
-
-.page-content .right .panel-title .pagination {
-  float: right;
-  position: static; }
-  .page-content .right .panel-title .pagination .swiper-pagination-switch {
-    background: #089AFD; }
-
-.page-content .right .scroll-focus {
-  margin-top: 20px; }
-  .page-content .right .scroll-focus .swiper-container {
-    height: 400px; }
-    .page-content .right .scroll-focus .swiper-container ul .img {
-      float: left;
-      margin: 0px 15px 15px 0;
-      text-align: center;
-      width: 85px;
-      height: 120px;
-      display: block;
-      background: none;
-      overflow: hidden;
-      position: relative; }
-      .page-content .right .scroll-focus .swiper-container ul .img:hover {
-        opacity: .8; }
-      .page-content .right .scroll-focus .swiper-container ul .img img {
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        display: block; }
-      .page-content .right .scroll-focus .swiper-container ul .img .name {
-        height: 30px;
-        line-height: 35px;
-        font-size: 13px;
-        background: none;
-        margin-top: -3px;
-        color: #333;
-        overflow: hidden; }

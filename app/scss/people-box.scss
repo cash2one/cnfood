@@ -1,0 +1,57 @@
+.people{
+    padding: 20px 20px 10px 20px;
+    background: rgba(229,229,229,0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 415px;
+    width: 170px;
+    z-index: 200;
+    .avatar{
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .name{
+        display: block;
+        font-size: 24px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    .udesc{
+        font-size: 14px;
+        line-height: 24px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        width: 128px;
+        transition: all 0.2s ease;
+        &:hover{
+            width: 450px;
+            background: rgba(229,229,229,0.9);
+            padding-top: 20px;
+            padding-right: 20px;
+            z-index: 1000;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    .ubotton{
+        .unum{
+            border: 1px solid #ccc;
+            background: #fff;
+            color: #999;
+            margin: 5px 0px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 13px;
+            .num{
+                color: #c84044;
+                font-size: 14px;
+                font-family: 'Georgia';
+                padding-right: 5px;
+            }
+        }
+    }
+}

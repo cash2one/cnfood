@@ -2,9 +2,19 @@
 @import "mixin";
 @import 'base';
 @import "top-list.scss";
-
+@import "people-box";
 .page-content{
     .left{
+        .left-l{
+            float: left;
+            width: 190px;
+            padding-right: 20px;
+            height: 800px;
+        }
+        .left-r{
+            float: right;
+            width: 650px;
+        }
         .news-box{
             .b-title{
                 font-size: 28px;
@@ -88,6 +98,8 @@
                 }
                 .news-show-r{
                     margin-left: 170px;
+                }
+                .news-show-r,.news-people{
                     .subject{
                         margin: 0 0 20px 0;
                         line-height: 30px;
@@ -198,9 +210,6 @@
     .right{
         .ad{
             margin-bottom: 20px;
-        }
-        .toplist-toggle{
-
         }
     }
 }

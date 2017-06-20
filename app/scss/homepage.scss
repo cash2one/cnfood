@@ -1,0 +1,30 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+@import "people-box";
+.page-content{
+    .left{
+        .left-l{
+            float: left;
+            width: 190px;
+            padding-right: 20px;
+            height: 800px;
+        }
+        .left-r{
+            float: right;
+            width: 650px;
+        }
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+    }
+    .right{
+        .ad{
+            margin-bottom: 20px;
+        }
+    }
+}

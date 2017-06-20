@@ -136,6 +136,9 @@ a{
     .right{
         float: right;
         width: 300px;
+        .tops-box{
+            width: 300px;
+        }
     }
 }
 // **************文章导航************************
@@ -156,7 +159,9 @@ a{
     }
     a{
         color: $baseColorPreyMid;
-        @extend %a-hover;        
+        &:hover{
+            color: $baseColor;
+        }       
     }
 }
 
