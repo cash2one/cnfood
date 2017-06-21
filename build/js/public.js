@@ -80,11 +80,22 @@ var cnfood = {
         });
     },
     paginationHover: function paginationHover(swiper) {
+        //鼠标移动到swiper分也时切换
         var page = $('.pagination span');
         page.mouseover(function () {
             $(this).click();
         });
     }
+    // hoverHeadToggle:function(){
+    //     var li = $('header .link li');
+    //     li.hover(function(){
+    //         var qrcodeBox = $(this).find('.qrcode-box');
+    //         qrcodeBox.css('opacity','0').show().animate({
+    //             opactiy:'1',
+    //             bottom:'-164px'
+    //         })
+    //     })
+    // }
 };
 
 $(function () {
