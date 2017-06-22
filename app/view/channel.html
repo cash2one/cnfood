@@ -8,12 +8,18 @@
     <include "../template/top.html">
     <include "../template/header.html">
     <include "../template/search-left.html">
+    <!--最外层盒子-->
     <div class="page-content">
+        <!--轮播开始-->
         <div class="main">
            <include "../template/channel-banner.html">        
         </div>
+        <!--结束-->
+        <!--开始-->
         <div class="main">
+            <!--左侧新闻盒子-->
             <div class="left">
+                <!--新闻盒子-->
                 <div class="news-box">
                     <include "../template/news.html">
                     <include "../template/news.html"> 
@@ -36,8 +42,13 @@
                     <include "../template/news.html"> 
                     <include "../template/news.html">
                 </div>
+                <!--结束-->
+                <!--分页-->
                 <include "../template/paging.html">
+                <!--结束-->
             </div>
+            <!--结束-->
+            <!--右侧开始-->
             <div class="right">
                 <div class="tops-box">
                     <h1 class="panel-title panel-title-bottom-line">TOPS 
@@ -68,8 +79,11 @@
                     </div>
                 </div>
             </div>
+            <!--右侧结束-->
         </div>
+        <!--结束-->
     </div>
+    <!--结束-->
     <include "../template/footer.html">
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
