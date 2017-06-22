@@ -1,0 +1,193 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+.page-content{
+    .banner{
+        height: 330px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        .icon-arrow-left-copy,.icon-arrow-right{
+            top: 144px;
+        }
+        .icon-arrow-left-copy{
+            left: 0;
+        }
+        .icon-arrow-right{
+            right: 0;
+        }
+    }
+    .events{
+        @extend .clearfix;
+        .event{
+            width: 360px;
+            height: 380px;
+            margin: 0 16px 20px 16px;
+            float: left;
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 10px 0;
+            h3{
+                @extend .clearfix;
+                margin:0 10px 5px 10px;
+                font-weight: bold;
+                font-size: 21px;
+                .red{
+                    color: #d2423c;
+                }
+                .green{
+                    color: #3fa20e;
+                }
+                .blue{
+                    color: #28aae2;
+                }
+                .more{
+                    float: right;
+                    color: #999;
+                    font-size: 13px;
+                }
+            }
+            .block{
+                position: relative;
+                height: 180px;
+                overflow: hidden;
+                .topic{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 34px;
+                    line-height: 34px;
+                    padding: 0 10px;
+                    width: 100%;
+                    background: rgba(0,0,0,.7);
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .meeting{
+                margin-top: 10px;
+                .meeting-list{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    li{
+                        padding-left: 10px;
+                        line-height: 32px;
+                        color: #787878;
+                        .title{
+                            margin-left: -10px;
+                        }
+                        .iconfont{
+                            display: inline-block;
+                            height: 30px;
+                            font-style: normal;
+                            font-size: 13px;
+                        }
+                        .icon-zhong{
+                            margin-left: 10px;
+                        }
+                        .over{
+                            float: right;
+                            color: #888;
+                            font-size: 12px;
+                            background: #f0f0f0;
+                            width: 72px;
+                            display: inline-block;
+                            text-align: center;
+                            height: 22px;
+                            line-height: 22px;
+                            margin-top: 3px;
+                            border-radius: 4px;
+                        }
+                        .residue-day{
+                            @extend .over;
+                            color: #c63927;
+                            border: solid 1px #c63927;
+                            background-color: #fff;
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .columns{
+        @extend .clearfix;
+        .column{
+            width: 50%;
+            float: left;
+            padding-right: 20px;
+            h3{
+                font-size: 21px;
+                font-weight: normal;
+                height: 36px;
+            }
+            ul{
+                li{
+                    width: 100%;
+                    padding: 20px 0px 20px 0px;
+                    border-bottom: 1px solid #e9e9e9;
+                    overflow: hidden;
+                    margin: 0px;
+                    position: relative;
+                    .img{
+                        float: left;
+                        overflow: hidden;
+                        width: 200px;
+                        height: 100px;
+                        margin-right: 20px;
+                        position: relative;
+                    }
+                    .txt{
+                        font-size: 13px;
+                        line-height: 25px;
+                        color: #787878;
+                        word-wrap: break-word;
+                        word-break: break-all;
+                        margin-top: -5px;
+                        overflow: hidden;
+                        h3{
+                            a{
+                                font-size: 18px; 
+                            }
+                        }
+                        .info{
+                           .iconfont{
+                                display: inline-block;
+                                height: 30px;
+                                font-style: normal;
+                                font-size: 13px;
+                            }
+                            .icon-zhong{
+                                margin-left: 10px;
+                            }
+                            .over{
+                                float: right;
+                                color: #888;
+                                font-size: 12px;
+                                background: #f0f0f0;
+                                width: 72px;
+                                display: inline-block;
+                                text-align: center;
+                                height: 22px;
+                                line-height: 22px;
+                                margin-top: 3px;
+                                border-radius: 4px;
+                            }
+                            .residue-day{
+                                @extend .over;
+                                color: #c63927;
+                                border: solid 1px #c63927;
+                                background-color: #fff;
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+@import "company";
+.page-content{
+    .left{
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+        .search-box{
+            .industry{
+                padding: 6px 0;
+                a{
+                    display: inline-block;
+                    line-height: 20px;
+                    padding: 0 2px;
+                    font-size: 14px;
+                    margin: 3px 9px;
+                }
+                a.select{
+                    color: $baseColor;
+                }
+                .tag-l{
+                    float: left;
+                    width: 120px;
+                    line-height: 18px;
+                    b{
+                        font-weight: normal;
+                        margin: 3px 0;
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+                    a{
+                        float: right;
+                    }
+                }
+                .tag-r{
+                    margin-left: 120px;
+                    line-height: 18px;
+                }
+            }
+            .area{
+                @extend .industry;
+            }
+            .search-box{
+                width: 380px;
+                margin-top: 6px;
+                padding: 6px 0;
+                @extend .clearfix;
+                .tag-l{
+                    float: left;
+                    width: 80px;
+                    line-height: 28px;
+                }
+                .tag-r{
+                    margin-left: 80px;
+                    line-height: 18px;
+                    height: 36px;
+                    border: 1px solid #e9e9e9;
+                    border-radius: 4px;
+                    input{
+                        display: inline-block;
+                        height: 34px;
+                        line-height: 34px;
+                        width: 270px;
+                        font-size: 15px;
+                        font-family: "Open Sans",Arial,"Microsoft YaHei";
+                        padding-left: 8px;
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                    }
+                    .iconfont{
+                        font-size: 20px;
+                        color: $baseColor;
+                        cursor: pointer;
+                        &:hover{
+                            color:#ffb911;
+                        }
+                    }
+                }
+            }
+            .amount-search{
+                height: 50px;
+                margin-top: 10px;
+                .totalnum{
+                    .num{
+                        color: #089AFD;
+                        font-family: Georgia;
+                        font-size: 24px;
+                    }
+                }
+                .where{
+                    padding-left: 20px;
+                    font-size: 12px;
+                    a{
+                        background: #089AFD;
+                        color: #fff;
+                        padding: 1px 3px;
+                        border-radius: 2px;
+                        line-height: 16px;
+                        display: inline-block;
+                        span{
+                            line-height: 16px;
+                            padding:0 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        .ad{
+            margin-bottom: 20px;
+        }
+    }
+}

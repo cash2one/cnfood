@@ -1,0 +1,49 @@
+.company {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #e9e9e9;
+  overflow: hidden;
+  margin: 0px;
+  position: relative; }
+  .company .cpy-img {
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    height: 100px;
+    margin-right: 20px;
+    position: relative; }
+    .company .cpy-img a {
+      width: 200px;
+      height: 100px;
+      display: table-cell;
+      vertical-align: middle; }
+      .company .cpy-img a img {
+        display: block;
+        width: auto;
+        max-width: 200px;
+        margin: 0 auto;
+        vertical-align: middle;
+        border: 0; }
+  .company .txt {
+    font-size: 13px;
+    line-height: 25px;
+    color: #787878;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-top: -5px;
+    overflow: hidden; }
+    .company .txt h3 {
+      font-size: 18px;
+      padding-bottom: 10px;
+      overflow: hidden;
+      font-weight: normal; }
+      .company .txt h3 .alias a {
+        color: #999999; }
+    .company .txt .location {
+      float: right;
+      padding-left: 15px;
+      font-size: 12px; }
+    .company .txt span {
+      padding-left: 20px;
+      font-size: 15px;
+      font-weight: normal; }

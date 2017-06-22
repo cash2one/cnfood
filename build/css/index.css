@@ -1,4 +1,4 @@
-.clearfix:after {
+.clearfix:after, .main-news .news-r .news-r-r .dzb:after {
   content: '';
   display: block;
   clear: both;
@@ -39,6 +39,7 @@ header {
       margin-left: 40px;
       position: relative; }
       header .link ul li:hover .qrcode-box {
+        display: block;
         bottom: -164px;
         opacity: 1; }
       header .link ul li .iconfont {
@@ -49,6 +50,7 @@ header {
       header .link ul li div {
         line-height: 28px; }
       header .link ul li .qrcode-box {
+        display: none;
         position: absolute;
         opacity: 0;
         bottom: -180px;
@@ -161,6 +163,34 @@ header {
       float: right; }
       .main-news .news-r .news-r-r .item {
         margin-bottom: 20px; }
+      .main-news .news-r .news-r-r .dzb {
+        margin-bottom: 20px; }
+        .main-news .news-r .news-r-r .dzb .dzb-l {
+          position: relative;
+          float: left;
+          width: 220px;
+          height: 310px;
+          border: 1px solid #e9e9e9;
+          overflow: hidden; }
+          .main-news .news-r .news-r-r .dzb .dzb-l img {
+            width: 100%;
+            height: 100%; }
+          .main-news .news-r .news-r-r .dzb .dzb-l .read {
+            display: block;
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 40px;
+            line-height: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff; }
+        .main-news .news-r .news-r-r .dzb .dzb-r {
+          float: right;
+          width: 70px;
+          height: 310px;
+          overflow: hidden; }
       .main-news .news-r .news-r-r .big-img {
         width: 300px;
         height: 150px; }

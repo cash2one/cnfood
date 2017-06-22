@@ -42,7 +42,7 @@ var cnfood = {
             }
         });
     },
-    fixedBox: function fixedBox(el, toggleTop) {
+    fixedBox: function fixedBox(el, toggleTop, callback, callback1) {
         if (el.length <= 0) return;
         if (toggleTop instanceof $) {
             toggleTop = toggleTop.offset().top;
@@ -52,8 +52,10 @@ var cnfood = {
             var top = toggleTop - scrollTop;
             if (top <= 0) {
                 el.addClass('fixed');
+                if (typeof callback === 'function') callback();
             } else {
                 el.removeClass('fixed');
+                if (typeof callback1 === 'function') callback1();
             }
         });
     },
@@ -85,17 +87,20 @@ var cnfood = {
         page.mouseover(function () {
             $(this).click();
         });
+    },
+    hoverHeadToggle: function hoverHeadToggle() {
+        var li = $('header .link li');
+        li.find('.iconfont').hover(function () {
+            var qrcodeBox = $(this).parent().find('.qrcode-box');
+            qrcodeBox.animate({
+                opacity: '1',
+                bottom: '-164px'
+            });
+        }, function () {
+            var qrcodeBox = $(this).parent().find('.qrcode-box');
+            qrcodeBox.css('opacity', '0');
+        });
     }
-    // hoverHeadToggle:function(){
-    //     var li = $('header .link li');
-    //     li.hover(function(){
-    //         var qrcodeBox = $(this).find('.qrcode-box');
-    //         qrcodeBox.css('opacity','0').show().animate({
-    //             opactiy:'1',
-    //             bottom:'-164px'
-    //         })
-    //     })
-    // }
 };
 
 $(function () {
@@ -104,7 +109,7 @@ $(function () {
     cnfood.scrollDirection(function () {
         tops.css('top', '50px');
     }, function () {
-        tops.css('top', '0');
+        tops.css('top', '10px');
     });
     // 初始化上下滚动事件
     cnfood.fixedBox($('.tops-box'), $('.tops-box')
@@ -112,4 +117,6 @@ $(function () {
     );cnfood.hideLogo();
     // 初始化切换tops
     cnfood.tabsToggle($('.top-name'), $('.toplist-toggle .top-list-box'), 'selected');
+    //header中的鼠标悬浮出现二维码
+    // cnfood.hoverHeadToggle();
 });

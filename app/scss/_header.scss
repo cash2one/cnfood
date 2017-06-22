@@ -32,6 +32,7 @@ header{
                 position: relative;
                 &:hover{
                     .qrcode-box{
+                        display: block;
                         bottom: -164px;
                         opacity: 1;
                     }
@@ -47,6 +48,7 @@ header{
                     line-height: 28px;
                 }
                 .qrcode-box{
+                    display: none;
                     position: absolute;
                     opacity: 0;
                     bottom: -180px;

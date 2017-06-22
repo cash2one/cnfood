@@ -1,0 +1,219 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+@import "static-nav";
+
+%h3{
+    height: 36px;
+    font-size: 21px;
+}
+%cpy-margin-30{
+    margin-bottom: 30px;
+}
+%cpy-table-l{
+    width: 170px;
+    float: left;
+}
+%cpy-table-r{
+    display: block;
+    margin-left: 170px;
+}
+.page-content{
+    .left{
+        .cpy-desc{
+            @extend %cpy-margin-30;
+            h3{
+                @extend %h3;
+            }
+            .desc{
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .fengcai{
+            h3{
+                @extend %h3;
+            }
+            .fc-img{
+                padding: 10px;
+                overflow: hidden;
+                margin-right: -10px;
+                .img{
+                    float: left;
+                    width: 270px;
+                    height: 270px;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .goods{
+            h3{
+                @extend %h3;
+            }
+            .fc-img{
+                padding: 10px;
+                overflow: hidden;
+                margin-right: -10px;
+                .img{
+                    float: left;
+                    width: 270px;
+                    height: 270px;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .link{
+            @extend %cpy-margin-30;
+            h3{
+                @extend %h3;
+            }
+            span{
+                color: #888;
+            }
+        }
+        .cpy-progress{
+            @extend %cpy-margin-30;
+            h3{
+                @extend %h3;
+            }
+            .progress{
+                text-align: center;
+                .head{
+                    padding: 10px 0;
+                    line-height: 20px;
+                    color: $baseColorPreyMid;
+                    margin: 0;
+                    border: none;
+                    .date{
+                        @extend %cpy-table-l;
+                    }
+                    .m-head{
+                        @extend %cpy-table-r;
+                    }
+                }
+                li{
+                    margin-left: 4px;
+                    border-left: 1px solid #e9e9e9;
+                    &:nth-child(2n+1){
+                        background: #f0f0f0;
+                    }
+                    &:hover{
+                         .pro-l span .icon-quan-copy{
+                            color: #ff8c01;
+                        }
+                    }
+                    .pro-l{
+                        color: $baseColorPreyMid;
+                        @extend .clearfix;
+                        span{
+                            float: left;
+                            margin-left: -6px;
+                            font-size: 12px;
+                            .iconfont{
+                                margin-right: 4px;
+                                font-size: 12px;
+                                color: $baseColor;
+                            }
+                        }
+                    }
+                    .pro-r{
+                        overflow: hidden;
+                        .cpy{
+                            text-align: left;
+                            padding-left: 10px;
+                            @extend %cpy-table-l;
+                        }
+                        .desc{
+                            @extend %cpy-table-r;
+                        }
+                    }
+                }
+            }
+        }
+        .relate{
+            h3{
+                @extend %h3;
+            }
+        }
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+    }
+    .right{
+        .ad{
+            margin-bottom: 20px;
+        }
+    }
+}
+// *****************头部企业信息*******************
+.cpy-top{
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    position: relative;
+    .cpy-top-l{
+        float: left;
+        width: 850px;
+        .cpy-img{
+            width: 180px;
+            max-height: 120px;
+            float: left;
+        }
+        .cpy-top-info{
+            margin-left: 210px;
+            h1{
+                font-size: 28px;
+                line-height: 42px;
+                margin: 0px 0px 5px 0;
+                font-weight: bold;
+                span{
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-left: 50px;
+                }
+            }
+            h2{
+                font-size: 18px;
+                margin: 0 0 5px 0;
+                font-weight: normal;
+                color: #089AFD;
+                font-style: italic;
+            }
+            ul{
+                li{
+                    float: left;
+                    font-size: 15px;
+                    width: 50%;
+                    line-height: 32px;
+                    span{
+                        color: #888;
+                    }
+                }
+            }
+        }
+    }
+    .cpy-top-r{
+        float: right;
+        margin-top: 60px;
+        width: 300px;
+    }
+}
+
