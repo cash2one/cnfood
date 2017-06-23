@@ -1,10 +1,10 @@
-$(function(){
-     var mySwiper = $('.swiper-container').swiper({
+$(function () {
+    var mySwiper = $('.swiper-container').swiper({
         autoplay: 3000,
         loop: true,
         pagination: '.pagination',
         autoplayDisableOnInteraction: false,
-        paginationClickable :true
+        paginationClickable: true
     });
     // 初始化轮播图左右箭头
     cnfood.initSwiperArrow(mySwiper);
