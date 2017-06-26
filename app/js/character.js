@@ -1,3 +1,4 @@
+
 require.config({
 　　　　paths:{
 　　　　　　"jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
@@ -7,17 +8,14 @@ require.config({
 　　});
 
 require(['jquery','public',"swiper"], function ($,mypublic,swiper) {
-    $(function () {
+     $(function(){
         var mySwiper = $('.swiper-container').swiper({
-            autoplay: 3000,
+            autoplay:3000,
             loop: true,
-            pagination: '.pagination',
-            autoplayDisableOnInteraction: false,
-            paginationClickable: true
+            pagination:'.pagination',
+            paginationClickable :true,
+            autoplayDisableOnInteraction: false
         });
-        // 初始化轮播图左右箭头
-        mypublic.cnfood.initSwiperArrow(mySwiper);
-        // 鼠标经过分页器换页
         mypublic.cnfood.paginationHover(mySwiper);
     })
 })

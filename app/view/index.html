@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../static/jquery.mCustomScrollbar.min.css">
     <link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">   
     <link href="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.css" rel="stylesheet">
-    <!--<script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/main'></script>  -->
+    <script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/index'></script>  
 </head>
 <body>
     <include "../template/top.html">
@@ -124,17 +124,22 @@
                     </ul>
                 </div>
                 <div class="toggle-box">
-                    <include "../template/news.html">
-                    <include "../template/news-yc.html">
-                    <include "../template/news.html">
-                    <include "../template/news-yc.html">
-                    <include "../template/news.html">
-                    <include "../template/news-yc.html">
-                    <include "../template/news.html">
-                    <include "../template/news-yc.html">
-                    <include "../template/news.html">
-                    <include "../template/news-yc.html">
-                    <include "../template/news.html">
+                    <div class="origin-news">
+                        <include "../template/news.html">
+                        <include "../template/news-yc.html">
+                        <include "../template/news.html">
+                        <include "../template/news-yc.html">
+                        <include "../template/news.html">
+                        <include "../template/news-yc.html">
+                        <include "../template/news.html">
+                        <include "../template/news-yc.html">
+                        <include "../template/news.html">
+                        <include "../template/news-yc.html">
+                        <include "../template/news.html">
+                    </div>
+                    <div class="new-news">
+
+                    </div>
                 </div>
                 <include "../template/getmore.html">
             </div>
@@ -409,11 +414,31 @@
         </div>
     </div>
     <include "../template/footer.html">
-    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script src="../static/jquery.mCustomScrollbar.min.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
     <script src="../js/public.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/index.js"></script>-->
+    <script>    
+        function tabsToggle(res){
+            $.each(res,function(i){
+                var newsl = $('<div class="news-item"><div class="img img-pt"><a href="javascript:;"><img src="'+ res[i].img +'" alt="">'
+                        +'</a></div><h1><a href="'+res[i].url+'" target="_blank">'+ res[i].title+'</a>'
+                        +'</h1><div class="tags tags-pt"><span class="tags-box"></span><div class="time">'+ res[i].time +'</div></div></div>');
+                
+                $.each(res[i].tags,function(j){
+                    var tags = $('span class="tag">'+res[i].tags[j]+'</span>');
+                    newsl.find('.tags-box').append(tags);
+                })
+                
+                var newsbox = $('.new-news');
+                newsbox.html('');
+                newsbox.append(newsl);
+            })
+        }
+    
+    
+    </script>
 </body>
 
 </html>

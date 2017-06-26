@@ -12,6 +12,8 @@
 
 
 <link rel="stylesheet" href="../css/news-detail.css">
+<script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/detail'></script>  
+
 </head>
 <body>
     <div class="top">
@@ -67,7 +69,7 @@
     <div class="search">
     <div class="main clearfix">
         <div class="search-left-l">
-            <a href="">原创</a><span class="splice">/</span>
+            <a href="" class="selected">原创</a><span class="splice">/</span>
             <a href="">独家</a><span class="splice">/</span>
             <a href="">资本事件</a><span class="splice">/</span>
             <a href="">移动互联网</a><span class="splice">/</span>
@@ -87,6 +89,20 @@
         <div class="main">
             <!--左侧-->
             <div class="left">
+                <!--悬浮框-->
+                <div class="left-l">
+                    <div class="people">
+    <div class="avatar">
+        <img src="../images/20170210@179732.jpg" alt="">
+    </div>
+    <a class="name">吴婷</a>
+    <div class="udesc">嘉宾传媒创始人，全媒体财经节目《我有嘉宾》主持人；长江商学院EMBA； 原安徽台王牌新闻节目主播； 纪录片制片人，出品制作纪录片《黑蜂的群舞》获国际纪录片节奖。</div>
+    <div class="ubotton">
+        <div class="unum"><span class="num">12</span>篇文章</div>
+        <div class="unum"><span class="num">9651</span>次阅读</div>
+    </div>
+</div>
+                </div>
                 <!--人物悬浮框结束-->
                 <!--新闻内容-->
                 <div class="left-r">
@@ -252,10 +268,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -271,10 +289,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -290,69 +310,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                        </div>
-                                        <div class="recommend-item hide">
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -370,10 +333,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -389,10 +354,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -408,69 +375,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                        </div>
-                                        <div class="recommend-item hide">
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <div class="time">3小时前</div>
-    </div>
-</div>
-<!--新闻结束-->
-                                            <!--新闻开始-->
-<div class="news-item">
-    <div class="img img-pt">
-        <a href="javascript:;">
-            <img src="../images/20170608@226216.jpg" alt="">
-        </a>
-    </div>
-    <h1>
-        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
-    </h1>
-    <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -488,10 +398,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -507,10 +419,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -526,10 +440,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -547,10 +463,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -566,10 +484,12 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -585,10 +505,142 @@
         <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
     </h1>
     <div class="tags tags-pt">
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
-        <span class="tag">天堂伞</span>
-        <span class="tag">零售业</span>
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                        </div>
+                                        <div class="recommend-item hide">
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                        </div>
+                                        <div class="recommend-item hide">
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
+        <div class="time">3小时前</div>
+    </div>
+</div>
+<!--新闻结束-->
+                                            <!--新闻开始-->
+<div class="news-item">
+    <div class="img img-pt">
+        <a href="javascript:;">
+            <img src="../images/20170608@226216.jpg" alt="">
+        </a>
+    </div>
+    <h1>
+        <a href="www.baidu.com" target="_blank">一个退休老人，用200块钱创业，他做了一把伞，一年竟卖了24亿，占市场份额83%！</a>
+    </h1>
+    <div class="tags tags-pt">
+        <span class="tags-box">
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+            <span class="tag">天堂伞</span>
+            <span class="tag">零售业</span>
+        </span>
         <div class="time">3小时前</div>
     </div>
 </div>
@@ -878,8 +930,8 @@
         </div>
     </div>
 </footer>
-    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script src="../js/public.js"></script>
-    <script src="../js/detail.js"></script>
+    <script src="../js/detail.js"></script>-->
 </body>
 </html>

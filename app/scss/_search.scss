@@ -27,6 +27,9 @@
             margin: 0 12px;
             color: $baseColorPreyTint;
         }
+        .selected{
+            color: $baseColor;
+        }
     }
     .search-r,.search-left-r{
         position: relative;

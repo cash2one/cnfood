@@ -2,6 +2,8 @@
 
 
 <link rel="stylesheet" href="../css/news-detail.css">
+<script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/detail'></script>  
+
 </head>
 <body>
     <include "../template/top.html">
@@ -12,6 +14,10 @@
         <div class="main">
             <!--左侧-->
             <div class="left">
+                <!--悬浮框-->
+                <div class="left-l">
+                    <include "../template/people-box.html">
+                </div>
                 <!--人物悬浮框结束-->
                 <!--新闻内容-->
                 <div class="left-r">
@@ -243,8 +249,8 @@
     </div>
     <!--主体结束-->
     <include "../template/footer.html">
-    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script src="../js/public.js"></script>
-    <script src="../js/detail.js"></script>
+    <script src="../js/detail.js"></script>-->
 </body>
 </html>

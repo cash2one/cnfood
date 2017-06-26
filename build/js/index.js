@@ -1,6 +1,25 @@
-'use strict';
+"use strict";
 
-(function ($) {
+// (function ($) {
+
+require.config({
+    paths: {
+        "jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
+        "public": "public",
+        "mCustomScrollbar": "../static/jquery.mCustomScrollbar.min",
+        "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min"
+    },
+    shim: {
+        "swiper": {
+            exports: "swiper"
+        },
+        "mCustomScrollbar": {
+            exports: "mCustomScrollbar"
+        }
+    }
+});
+
+require(['jquery', 'public', "mCustomScrollbar", "swiper"], function ($, mypublic, mCustomScrollbar, swiper) {
     $(".content").mCustomScrollbar({
         theme: 'my-theme'
     });
@@ -9,7 +28,7 @@
     var fixedwrap = $('.fixed-wrap');
     $(document).on('mouseenter', content, function () {}
     // ********************************************************
-    );var mySwiper = $('.swiper-container').swiper({
+    );var mySwiper = new Swiper('.swiper-container', {
         autoplay: 4000,
         loop: true,
         pagination: '.pagination',
@@ -17,16 +36,18 @@
         autoplayDisableOnInteraction: false
     });
     // 初始化轮播图左右箭头
-    cnfood.initSwiperArrow(mySwiper);
+    mypublic.cnfood.initSwiperArrow(mySwiper);
     //初始化top滚动事件
-    cnfood.fixedBox($('.fixed-wrap'), $('.news-l'));
+    mypublic.cnfood.fixedBox($('.fixed-wrap'), $('.news-l'));
     // 鼠标经过分页器换页
-    cnfood.paginationHover(mySwiper);
+    mypublic.cnfood.paginationHover(mySwiper);
     // 固定左侧新闻栏
     var fixedwrap = $('.fixed-wrap');
-    cnfood.scrollDirection(function () {
+    mypublic.cnfood.scrollDirection(function () {
         fixedwrap.css('top', '40px');
     }, function () {
         fixedwrap.css('top', '0');
     });
-})(jQuery);
+});
+
+// })(jQuery);

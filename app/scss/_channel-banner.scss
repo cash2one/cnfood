@@ -13,8 +13,16 @@
         .headline{
             float: left;
             width: 500px;
-            padding-top: 52px;
             color: #777;
+            .mark{
+                display: inline-block;
+                margin-bottom: 20px;
+                border: 1px solid $baseColor;
+                color: $baseColor;
+                padding: 1px 10px;
+                font-weight: normal;
+                border-radius: 4px;
+            }
             .title{
                 font-size: 24px;
                 line-height: 32px;
