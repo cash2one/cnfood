@@ -7,7 +7,8 @@ require.config({
         "jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
         "public": "public",
         "mCustomScrollbar": "../static/jquery.mCustomScrollbar.min",
-        "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min"
+        "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min",
+        "jqthumb": "../static/jqthumb.min"
     },
     shim: {
         "swiper": {
@@ -15,11 +16,16 @@ require.config({
         },
         "mCustomScrollbar": {
             exports: "mCustomScrollbar"
+        },
+        "jqthumb": {
+            deps: ["jquery"]
         }
     }
 });
 
-require(['jquery', 'public', "mCustomScrollbar", "swiper"], function ($, mypublic, mCustomScrollbar, swiper) {
+require(['jquery', 'public', "mCustomScrollbar", "swiper", "jqthumb"], function ($, mypublic, mCustomScrollbar, swiper) {
+
+    // 初始化左侧新闻滚动条
     $(".content").mCustomScrollbar({
         theme: 'my-theme'
     });
@@ -48,6 +54,39 @@ require(['jquery', 'public', "mCustomScrollbar", "swiper"], function ($, mypubli
     }, function () {
         fixedwrap.css('top', '0');
     });
+
+    //文章切换ajax
+
+    $('.news-tab').find('li').click(function () {
+        var index = $(this).index();
+        $(this).addClass('selected').siblings().removeClass('selected');
+        console.log(index);
+        if (index === 0) {
+            $('.origin-news').show();
+            $('.new-news').hide();
+        } else {
+            $('.origin-news').hide();
+            $('.new-news').show();
+            $('.news-list').html('');
+            $('.loading').show();
+            // ajax请求
+        }
+    });
+    // 创建新闻添加
+    function tabsToggle(res) {
+        $.each(res, function (i) {
+            var newsl = $('<div class="news-item"><div class="img img-pt"><a href="javascript:;"><img src="' + res[i].img + '" alt="">' + '</a></div><h1><a href="' + res[i].url + '" target="_blank">' + res[i].title + '</a>' + '</h1><div class="tags tags-pt"><span class="tags-box"></span><div class="time">' + res[i].time + '</div></div></div>');
+
+            $.each(res[i].tags, function (j) {
+                var tags = $('span class="tag">' + res[i].tags[j] + '</span>');
+                newsl.find('.tags-box').append(tags);
+            });
+
+            var newsbox = $('.new-news');
+            newsbox.html('');
+            newsbox.append(newsl);
+        });
+    }
 });
 
 // })(jQuery);

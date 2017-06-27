@@ -100,6 +100,15 @@
                     }
                 }
             }
+            .new-news{
+                .loading{
+                    display: none;
+                    img{
+                        display: block;
+                        margin: 40px auto 400px auto;
+                    }
+                }
+            }
             .get-more{
                 margin-top: 15px;
             }
@@ -147,6 +156,7 @@
              .big-img{
                 width: 300px;
                 height: 150px;
+                overflow: hidden;
             }
             .banner{
                 width: 100%;

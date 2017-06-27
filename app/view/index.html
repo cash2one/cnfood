@@ -138,7 +138,12 @@
                         <include "../template/news.html">
                     </div>
                     <div class="new-news">
-
+                        <div class="loading">
+                            <img src="../images/loading.gif" alt="">
+                        </div>
+                        <div class="news-list">
+                            
+                        </div>
                     </div>
                 </div>
                 <include "../template/getmore.html">
@@ -146,7 +151,7 @@
             <div class="news-r-r">
                 <div class="dzb">
                     <div class="dzb-l">
-                        <img src="../images/dianzibao.png" alt="">
+                        <img src="../images/dianzibao.png" attr-src="../images/20170613@228106.jpg" alt="">
                         <a class="read">点击阅读</a>
                     </div>
                     <div class="dzb-r">
@@ -432,7 +437,6 @@
                 })
                 
                 var newsbox = $('.new-news');
-                newsbox.html('');
                 newsbox.append(newsl);
             })
         }

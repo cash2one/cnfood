@@ -1,0 +1,97 @@
+<include "../template/public_header.html">
+
+
+<link rel="stylesheet" href="../css/news-list.css?v=71c0c37466">
+<script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/news-list'></script>  
+</head>
+<body>
+    <include "../template/top.html">
+    <include "../template/header.html">
+    <include "../template/search-left.html">
+    <div class="page-content">
+        <div class="main">
+            <div class="left">
+                <div class="title-nav">
+                    <i class="iconfont icon-fangzi"></i>
+                    <a>投资界</a><span class="split">></span>
+                    <a>投资</a><span class="split">></span>
+                    <a>天使投资</a>
+                </div>
+                <!--新闻盒子-->
+                <div class="news-box">
+                    <include "../template/news.html">
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html">
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html">
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html">
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html"> 
+                    <include "../template/news.html">
+                </div>
+                <!--新闻盒子结束-->
+                <!--分页开始-->
+                <include "../template/paging.html">
+                <!--分页结束-->
+            </div>
+            <div class="right">
+                <!--广告-->
+                <div class="ad">
+                    <img src="../images/0f0005w9PFlEDxmOEZ5Wjf.jpg" alt="">
+                </div>
+                <!--广告结束-->
+                <!--tops开始-->
+                <div class="tops-box">
+                    <!--tops tab页-->
+                    <h1 class="panel-title panel-title-bottom-line">TOPS 
+                        <div class="box-r">
+                            <span class="top-name selected">日排行</span><span class="split">/</span>
+                            <span class="top-name">周排行</span><span class="split">/</span>
+                            <span class="top-name">原创</span>
+                        </div>
+                    </h1>
+                    <!--结束-->
+                    <!--切换盒子-->
+                    <div class="toplist-toggle">
+                        <include "../template/top-list.html">
+                        <include "../template/top-list-hide.html">
+                        <include "../template/top-list-hide.html">
+                    </div>
+                    <!--结束-->
+                    <!--侧边栏新闻-->
+                    <div class="item">
+                        <h1 class="panel-title">巨头<a href="javascript:;" class="more">MORE+</a></h1>
+                        <div class="panel panel-prey">
+                            <div class="news-img">
+                                <img src="../images/20170612@227627.jpg" alt="" style="height:100%;width:100%;">
+                            </div>
+                            <a href="#" class="news">我看到你福覅几句为人陪我二君恩错承诺你额fin发您肉veonin犯法</a>
+                        </div>
+                        <ul class="news-list">
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                            <li><a href="#">2017中国基金小镇高峰论坛@青岛【现场直播】</a></li>
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                        </ul>
+                    </div>
+                    <!--结束-->
+                </div>
+                <!--tops结束-->
+            </div>
+        </div>
+    </div>
+    <include "../template/footer.html">
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../js/public.js?v=83751f40b2"></script>-->
+</body>
+</html>

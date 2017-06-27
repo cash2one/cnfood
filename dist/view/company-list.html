@@ -1,0 +1,135 @@
+<include "../template/public_header.html">
+
+
+<link rel="stylesheet" href="../css/company-list.css?v=68adcebccd">
+<script src="https://cdn.bootcss.com/require.js/2.3.3/require.min.js" defer async="true" data-main='../js/company-list'></script> 
+</head>
+<body>
+    <include "../template/top.html">
+    <include "../template/header.html">
+    <include "../template/search-left.html">
+    <!--外部盒子-->
+    <div class="page-content">
+        <div class="main">
+            <!--左侧-->
+            <div class="left">
+                <!--层级导航-->
+                <div class="title-nav">
+                    <i class="iconfont icon-fangzi"></i>
+                    <a>投资界</a><span class="split">></span>
+                    <a>数据</a><span class="split">></span>
+                    <a>企业库</a>
+                </div>
+                <!--结束-->
+                <!--搜索框开始-->
+                <div class="search-box">
+                    <!--企业-->
+                    <div class="industry">
+                        <div class="tag-l"><b>企业：</b><a href="" class="select">不限</a></div>
+                        <div class="tag-r">
+                            <a href="">阿里巴巴</a><a href="">腾讯</a><a href="">小米</a>
+                            <a href="">锤子</a><a href="">百度</a><a href="">锤子</a><a href="">百度</a>
+                            <a href="">阿里巴巴</a><a href="">腾讯</a><a href="">小米</a>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <!--地点开始-->
+                    <div class="area">
+                        <div class="tag-l"><b>地点：</b><a href="" class="select">不限</a></div>
+                        <div class="tag-r">
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                            <a href="">天津</a><a href="">北京</a><a href="">上海</a><a href="">北京</a><a href="">上海</a>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <!--搜索框开始-->
+                    <div class="search-box">
+                        <div class="tag-l">搜  索：</div>
+                        <div class="tag-r">
+                            <input type="text">
+                            <i class="iconfont icon-search"></i>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <!--总计-->
+                    <div class="amount-search">
+                        <span class="totalnum">共搜索到<span class="num">29780</span>条结果</span>
+                        <span class="where">当前条件：<a href="">日本<span>x</span></a></span>
+                    </div>
+                    <!--结束-->
+                </div>
+                <!--结束-->
+                <!--企业列表-->
+                <div class="cpy-box">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                    <include "../template/company.html">
+                </div>
+                <!--企业列表结束-->
+                <!--分页-->
+                <include "../template/paging.html">
+                <!--结束-->
+            </div>
+            <!--结束-->
+            <div class="right">
+                <div class="ad">
+                    <img src="../images/0f0005w9PFlEDxmOEZ5Wjf.jpg" alt="">
+                </div>
+                <!--tops-->
+                <div class="tops-box">
+                    <!--tops tab-->
+                    <h1 class="panel-title panel-title-bottom-line">TOPS 
+                        <div class="box-r">
+                            <span class="top-name selected">日排行</span><span class="split">/</span>
+                            <span class="top-name">周排行</span><span class="split">/</span>
+                            <span class="top-name">原创</span>
+                        </div>
+                    </h1>
+                    <!--结束-->
+                    <div class="toplist-toggle">
+                        <!--tops列表-->
+                        <include "../template/top-list.html">
+                        <include "../template/top-list-hide.html">
+                        <include "../template/top-list-hide.html">
+                        <!--结束-->
+                    </div>
+                    <!--侧边栏新闻-->
+                    <div class="item">
+                        <h1 class="panel-title">巨头<a href="javascript:;" class="more">MORE+</a></h1>
+                        <div class="panel panel-prey">
+                            <div class="news-img">
+                                <img src="../images/20170612@227627.jpg" alt="" style="height:100%;width:100%;">
+                            </div>
+                            <a href="#" class="news">我看到你福覅几句为人陪我二君恩错承诺你额fin发您肉veonin犯法</a>
+                        </div>
+                        <ul class="news-list">
+                            <!--新闻列表-->
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                            <li><a href="#">2017中国基金小镇高峰论坛@青岛【现场直播】</a></li>
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                            <!--结束-->
+                        </ul>
+                    </div>
+                    <!--结束-->
+                </div>
+                <!--结束-->
+            </div>
+        </div>
+    </div>
+    <!--结束-->
+    <include "../template/footer.html">
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../js/public.js?v=83751f40b2"></script>-->
+</body>
+</html>

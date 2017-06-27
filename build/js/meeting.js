@@ -5,6 +5,11 @@ require.config({
         "jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
         "public": "public",
         "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min"
+    },
+    shim: {
+        "swiper": {
+            exports: "swiper"
+        }
     }
 });
 

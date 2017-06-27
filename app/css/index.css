@@ -156,6 +156,11 @@ header {
         .main-news .news-r .news-r-l .news-tab ul .selected {
           background: #089AFD;
           color: #ffffff; }
+      .main-news .news-r .news-r-l .new-news .loading {
+        display: none; }
+        .main-news .news-r .news-r-l .new-news .loading img {
+          display: block;
+          margin: 40px auto 400px auto; }
       .main-news .news-r .news-r-l .get-more {
         margin-top: 15px; }
     .main-news .news-r .news-r-r {
@@ -193,7 +198,8 @@ header {
           overflow: hidden; }
       .main-news .news-r .news-r-r .big-img {
         width: 300px;
-        height: 150px; }
+        height: 150px;
+        overflow: hidden; }
       .main-news .news-r .news-r-r .banner {
         width: 100%;
         height: 80px;
