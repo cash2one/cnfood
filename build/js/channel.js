@@ -10,7 +10,7 @@ require.config({
 
 require(['jquery', 'public', "swiper"], function ($, mypublic, swiper) {
     $(function () {
-        var mySwiper = $('.swiper-container').swiper({
+        var mySwiper = new Swiper('.swiper-container', {
             autoplay: 3000,
             loop: true,
             pagination: '.pagination',

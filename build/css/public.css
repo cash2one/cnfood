@@ -340,9 +340,9 @@ footer {
     line-height: 28px;
     padding: 10px 0;
     color: #bbb; }
-    footer .footer .company {
+    footer .footer .f-company {
       float: left; }
-      footer .footer .company span {
+      footer .footer .f-company span {
         padding: 0 6px; }
     footer .footer .links {
       float: right; }
