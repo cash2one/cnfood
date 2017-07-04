@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;
+}
+a{
+    color: #000000;
+    &:link{
+        text-decoration: none;
+    }
+    &:visited{
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+    &:active{
+        text-decoration: none;
+    }
+}
+
+// 顶部
+.top-bar{
+    padding: 0.13rem 0.266rem;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    overflow: hidden;
+    // 头部logo
+    .logo-box{
+        float: left;
+        .logo{
+            width: rem(76);
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// 导航
+.nav-bar{
+    height: .9333rem;
+    line-height: .933rem;
+    background: #f0f0f0;
+    .nav-list{
+        overflow-x:scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        li{
+            display: inline-block;
+            padding: 0 0.4rem;
+            a{
+                font-size: .373rem;
+                color: #222;
+            }
+        }
+        .active{
+            a{
+                color: $baseColor;
+                font-size: .4rem;
+            }
+        }
+    }
+}
+
+%tag{
+    color: #999;
+    height: .64rem;
+    line-height: .64rem;
+    .classify{
+        font-size: .2666rem;
+        border: 1px solid #089AFD;
+        color: #089AFD;
+        padding: 0rem .2rem;
+        border-radius: .08rem;
+        height: .64rem;
+        line-height: .64rem;
+    }
+    .time{
+        font-size: .32rem;
+    }
+}
+// 新闻列表
+.news-list{
+    .news{
+        width: 100%;
+        display: flex;
+        padding: .4rem .26rem;
+        border-bottom: 1px solid #f0f0f0;
+        overflow: hidden;
+        color: #353535;
+        .word{
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            h3{
+                padding: 0 0 .4rem 0;
+                display: block;
+                font-size: .42rem;
+                font-weight: 500;
+                height: auto;
+                line-height: .56rem;
+            }
+            .tag{
+                @extend %tag;
+            }
+        }
+        .img{
+            flex: none;
+            width: 30%; 
+            overflow: hidden;
+            max-height: 80px;
+            min-height: 70px;
+            margin-left: .32rem;
+        }
+    }
+    // 频道推荐位
+    .special{
+        padding: 0 0 .26666rem 0;
+        background: #f0f0f0;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            line-height: 40px;
+            height: 40px;
+            background: #f0f0f0;
+            padding: 0 .26666rem;
+            span{
+                font-size: $baseFontSize;
+            }
+            .iconfont{
+                font-size: .58rem;
+                color: $baseColor;
+            }
+        }
+        .news-content{
+            display: block;
+            width: 100%;
+            margin: 0 0 .2666rem 0;
+            .img{
+                overflow: hidden;
+                margin: 0 0 .2666rem 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .info{
+                padding: 0 .2666rem;
+                display: block;
+                font-size: .42rem;
+                height: auto;
+                line-height: .56rem;
+                color: #353535;
+                .tag{
+                    @extend %tag;
+                    margin-top: .1333rem;
+                }
+            }
+        }
+    }
+}
+
+// 自定义分享jiathis的样式
+.jiathis-share{
+    text-align: center;
+    margin: 1rem 0;
+}
+.jiathis_style_32x32{
+    .iconfont{
+        font-size: 1.12rem;
+    }
+    a{
+        display: inline-block;
+        margin: 0 .4rem;
+        .jiathis_txt{
+            display: none!important;
+        }
+    }
+    .icon-weibo2{
+        color: #d2423c;
+    }
+    .icon-qq{
+        color: #089AFD;
+    }
+    .icon-qqkongjian{
+        color: #f67b23;
+    }
+}

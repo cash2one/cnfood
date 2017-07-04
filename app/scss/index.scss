@@ -100,15 +100,24 @@
                     }
                 }
             }
-            .new-news{
-                .loading{
+            .toggle-box{
+                .origin-news{
                     display: none;
-                    img{
-                        display: block;
-                        margin: 40px auto 400px auto;
+                }
+                .active{
+                    display: block;
+                }
+                .new-news{
+                    .loading{
+                        display: none;
+                        img{
+                            display: block;
+                            margin: 40px auto 400px auto;
+                        }
                     }
                 }
             }
+ 
             .get-more{
                 margin-top: 15px;
             }

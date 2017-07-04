@@ -1,0 +1,211 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif; }
+
+a {
+  color: #000000; }
+  a:link {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
+
+.top-bar {
+  padding: 0.13rem 0.266rem;
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  overflow: hidden; }
+  .top-bar .logo-box {
+    float: left; }
+    .top-bar .logo-box .logo {
+      width: 2.02667rem;
+      overflow: hidden; }
+      .top-bar .logo-box .logo img {
+        width: 100%; }
+
+.nav-bar {
+  height: .9333rem;
+  line-height: .933rem;
+  background: #f0f0f0; }
+  .nav-bar .nav-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; }
+    .nav-bar .nav-list li {
+      display: inline-block;
+      padding: 0 0.4rem; }
+      .nav-bar .nav-list li a {
+        font-size: .373rem;
+        color: #222; }
+    .nav-bar .nav-list .active a {
+      color: #089AFD;
+      font-size: .4rem; }
+
+.news-list .news .word .tag, .news-list .special .news-content .info .tag {
+  color: #999;
+  height: .64rem;
+  line-height: .64rem; }
+  .news-list .news .word .tag .classify, .news-list .special .news-content .info .tag .classify {
+    font-size: .2666rem;
+    border: 1px solid #089AFD;
+    color: #089AFD;
+    padding: 0rem .2rem;
+    border-radius: .08rem;
+    height: .64rem;
+    line-height: .64rem; }
+  .news-list .news .word .tag .time, .news-list .special .news-content .info .tag .time {
+    font-size: .32rem; }
+
+.news-list .news {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .4rem .26rem;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
+  color: #353535; }
+  .news-list .news .word {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .news-list .news .word h3 {
+      padding: 0 0 .4rem 0;
+      display: block;
+      font-size: .42rem;
+      font-weight: 500;
+      height: auto;
+      line-height: .56rem; }
+  .news-list .news .img {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 30%;
+    overflow: hidden;
+    max-height: 80px;
+    min-height: 70px;
+    margin-left: .32rem; }
+
+.news-list .special {
+  padding: 0 0 .26666rem 0;
+  background: #f0f0f0; }
+  .news-list .special .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    padding: 0 .26666rem; }
+    .news-list .special .title span {
+      font-size: 0.42rem; }
+    .news-list .special .title .iconfont {
+      font-size: .58rem;
+      color: #089AFD; }
+  .news-list .special .news-content {
+    display: block;
+    width: 100%;
+    margin: 0 0 .2666rem 0; }
+    .news-list .special .news-content .img {
+      overflow: hidden;
+      margin: 0 0 .2666rem 0; }
+      .news-list .special .news-content .img img {
+        width: 100%; }
+    .news-list .special .news-content .info {
+      padding: 0 .2666rem;
+      display: block;
+      font-size: .42rem;
+      height: auto;
+      line-height: .56rem;
+      color: #353535; }
+      .news-list .special .news-content .info .tag {
+        margin-top: .1333rem; }
+
+.jiathis-share {
+  text-align: center;
+  margin: 1rem 0; }
+
+.jiathis_style_32x32 .iconfont {
+  font-size: 1.12rem; }
+
+.jiathis_style_32x32 a {
+  display: inline-block;
+  margin: 0 .4rem; }
+  .jiathis_style_32x32 a .jiathis_txt {
+    display: none !important; }
+
+.jiathis_style_32x32 .icon-weibo2 {
+  color: #d2423c; }
+
+.jiathis_style_32x32 .icon-qq {
+  color: #089AFD; }
+
+.jiathis_style_32x32 .icon-qqkongjian {
+  color: #f67b23; }
+
+.events-list li {
+  padding: .26666rem;
+  margin-bottom: .26666rem;
+  -webkit-box-shadow: 0px 0px .266666rem #ddd;
+          box-shadow: 0px 0px .266666rem #ddd; }
+  .events-list li .img img {
+    display: block;
+    height: auto;
+    width: 100%; }
+  .events-list li .txt h3 {
+    font-size: .45rem;
+    line-height: .64rem;
+    font-weight: normal;
+    margin: .26666rem 0; }
+    .events-list li .txt h3 em {
+      font-size: .37rem;
+      font-style: normal;
+      background: #d2423c;
+      color: #fff;
+      display: inline-block;
+      border-radius: .1333rem;
+      margin-right: .13333rem;
+      padding: 0 .13333rem;
+      position: relative;
+      top: -0.04rem;
+      opacity: .4; }
+  .events-list li .txt .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    color: #787878;
+    font-size: .34rem; }
+    .events-list li .txt .info .date-add .add, .events-list li .txt .info .date-add .date {
+      margin-right: .2666rem; }
+      .events-list li .txt .info .date-add .add .iconfont, .events-list li .txt .info .date-add .date .iconfont {
+        font-size: .32rem; }
+    .events-list li .txt .info .rest-time {
+      border: 1px solid #c63927;
+      color: #c63927;
+      background: #fff;
+      border-radius: .13333rem;
+      padding: 0 .13333rem;
+      font-size: .34rem;
+      height: .5333rem;
+      line-height: .53333rem; }

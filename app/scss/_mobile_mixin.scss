@@ -1,0 +1,11 @@
+@function rem($px){
+    @return ($px/37.5) + rem;
+}
+
+%clearfix{
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

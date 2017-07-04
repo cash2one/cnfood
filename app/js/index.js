@@ -4,7 +4,7 @@ require.config({
 　　　　paths:{
 　　　　　　"jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
             "public":"public",
-            "mCustomScrollbar":"../static/jquery.mCustomScrollbar.min",
+            "mCustomScrollbar":"https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min",
             "swiper":"https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min",
             "jqthumb":"../static/jqthumb.min"
 　　　　},
@@ -13,6 +13,7 @@ require.config({
                 exports:"swiper"
             },
             "mCustomScrollbar":{
+                deps:["jquery"],
                 exports:"mCustomScrollbar"
             },
             "jqthumb":{
@@ -24,16 +25,12 @@ require.config({
 
 　　require(['jquery','public',"mCustomScrollbar","swiper","jqthumb"], function ($,mypublic,mCustomScrollbar,swiper) {
 
-        // 初始化左侧新闻滚动条
-　　　　$(".content").mCustomScrollbar({
-            theme: 'my-theme'
-        });
         // ************首页左边栏滚动条显示*********************
-        var content = $('.news-l');
-        var fixedwrap = $('.fixed-wrap');
-        $(document).on('mouseenter', content, function () {
+        // var content = $('.news-l');
+        // var fixedwrap = $('.fixed-wrap');
+        // $(document).on('mouseenter', content, function () {
 
-        })
+        // })
         // ********************************************************
         var mySwiper = new Swiper('.swiper-container',{
             autoplay: 4000,
@@ -92,7 +89,14 @@ require.config({
                 newsbox.append(newsl);
             })
         }
-
+         // 初始化左侧新闻滚动条
+　　　　$(".content").mCustomScrollbar({
+            theme: 'my-theme',
+            autoHideScrollbar: true,
+            mouseWheel:{ 
+                enable:true
+            }
+        });
 　　});
 
 // })(jQuery);

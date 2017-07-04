@@ -1,0 +1,133 @@
+@import "mobile_base";
+@import "mobile_mixin";
+@import "mobile_public";
+
+.news-show{
+    padding: 0 .26666rem;
+    h1{
+        font-size: .5rem;
+        line-height: .7rem;
+        font-weight: 600;
+        margin: .266666rem 0;
+    }
+    .info{
+        font-size: .34rem;
+        height: auto;
+        line-height: .533rem;
+        color: #999;
+        position: relative;
+        // padding-right: 1.7rem;
+        position: relative;
+        .change-font{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: .4rem;
+            color: #999;
+            overflow: hidden;
+            border: 1px solid #089AFD;
+            border-radius: .08rem;
+            .big,.small{
+                width: .8rem;
+                height: .533rem;
+                line-height: .533rem;
+                display: block;
+                float: left;
+                color: #089AFD;
+                font-size: .32rem;
+                text-align: center;
+                transition: all .2s;    
+            }
+            .big{
+                font-size: .42rem;
+            }
+            .selected{
+                background: $baseColor;
+                color: #ffffff;
+            }
+        }
+    }
+    .subject{
+        &:before{
+            content: "“";
+            top: 0rem;
+            left: -0.666rem;
+            font-family: "宋体";
+            font-size: .666rem;
+            position: absolute;
+            display: block;
+            color: #089AFD;
+        }
+        &:after{
+            content: "”";
+            bottom: -0.4rem;
+            right: 0rem;
+            font-family: "宋体";
+            font-size: .6666rem;
+            position: absolute;
+            display: block;
+            color: #089AFD;
+        }
+        line-height: .56rem;
+        font-size: .34rem;
+        color: #999;
+        position: relative;
+        text-indent: 2em;
+        margin: .266666rem 0;
+    }
+    .news-content{
+        font-size: .45rem;
+        line-height: .74rem;
+        color: #111;
+        font-weight: 500;
+        img{
+            max-width: 100%;
+        }
+    }
+    .originatips{
+        font-size: .32rem;
+        text-align: left;
+        color: #9b9b9b;
+        line-height: .48rem;
+        padding: .8rem 0 .266rem 0;
+    }
+    .news-tag{
+        margin-top: .4rem;
+        .tag{
+            a{
+                display: inline-block;
+                border: 1px solid #efefef;
+                padding: .1333rem .26666rem;
+                font-size: .32rem;
+                line-height: .26666rem;
+                margin: 0 .2666rem .13333rem 0;
+                color: #089AFD;
+                border-radius: .4rem;
+            }
+        }
+    }
+}
+
+.news-box{
+    overflow: hidden;
+    border-top: .33333rem solid #f0f0f0;
+    padding: 0 .2666rem;
+    .relat{
+        font-size: .4rem;
+        font-weight: normal;
+        border-bottom: 1px solid #f0f0f0;
+        height: 1rem;
+        line-height: 1rem;
+        color: #787878;
+        .iconfont{
+            margin-right: .2rem;
+            color: $baseColor;
+        }
+    }
+}
+
+//友言
+.youyan{
+    padding: 0 .2rem 1rem .2rem;
+    border-top: .25rem solid #f0f0f0;
+}

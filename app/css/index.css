@@ -156,9 +156,13 @@ header {
         .main-news .news-r .news-r-l .news-tab ul .selected {
           background: #089AFD;
           color: #ffffff; }
-      .main-news .news-r .news-r-l .new-news .loading {
+      .main-news .news-r .news-r-l .toggle-box .origin-news {
         display: none; }
-        .main-news .news-r .news-r-l .new-news .loading img {
+      .main-news .news-r .news-r-l .toggle-box .active {
+        display: block; }
+      .main-news .news-r .news-r-l .toggle-box .new-news .loading {
+        display: none; }
+        .main-news .news-r .news-r-l .toggle-box .new-news .loading img {
           display: block;
           margin: 40px auto 400px auto; }
       .main-news .news-r .news-r-l .get-more {

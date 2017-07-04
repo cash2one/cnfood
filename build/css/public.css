@@ -402,7 +402,6 @@ footer {
       font-style: italic;
       font-family: 'Georgia';
       text-align: right;
-      margin-top: -20px;
       color: #999; }
       .channel-focus .channel-swiper .headline .p .current {
         font-size: 40px;
@@ -522,7 +521,10 @@ a {
     float: right;
     width: 300px; }
     .page-content .right .tops-box {
+      height: 800px;
       width: 300px; }
+      .page-content .right .tops-box .tops {
+        width: 300px; }
 
 .title-nav {
   height: 40px;

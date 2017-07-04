@@ -147,7 +147,8 @@ header {
 .page-content .left .cpy-desc .desc {
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  overflow: hidden; }
 
 .page-content .left .fengcai .fc-img {
   padding: 10px;
@@ -231,7 +232,8 @@ header {
     .cpy-top .cpy-top-l .cpy-img {
       width: 180px;
       max-height: 120px;
-      float: left; }
+      float: left;
+      overflow: hidden; }
     .cpy-top .cpy-top-l .cpy-top-info {
       margin-left: 210px; }
       .cpy-top .cpy-top-l .cpy-top-info h1 {

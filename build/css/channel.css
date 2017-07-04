@@ -111,9 +111,9 @@ header {
 .page-content .right .ad {
   margin-bottom: 20px; }
 
-.page-content .main {
+.main {
   padding-top: 15px; }
-  .page-content .main .col-2 {
+  .main .col-2 {
     float: left;
     border-left: 5px solid #ffffff;
     width: 16.66666%;
@@ -124,15 +124,15 @@ header {
     line-height: 60px;
     -webkit-transition: all .2s;
     transition: all .2s; }
-    .page-content .main .col-2:hover {
+    .main .col-2:hover {
       background: #089AFD; }
-      .page-content .main .col-2:hover .con .big a, .page-content .main .col-2:hover .con .small a {
+      .main .col-2:hover .con .big a, .main .col-2:hover .con .small a {
         color: #ffffff; }
-    .page-content .main .col-2 .con {
+    .main .col-2 .con {
       margin-left: 20px; }
-      .page-content .main .col-2 .con .big {
+      .main .col-2 .con .big {
         font-size: 16px; }
-        .page-content .main .col-2 .con .big a {
+        .main .col-2 .con .big a {
           color: #999999; }
-      .page-content .main .col-2 .con .small a {
+      .main .col-2 .con .small a {
         color: #cccccc; }
