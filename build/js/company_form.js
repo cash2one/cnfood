@@ -124,14 +124,33 @@ $(function () {
 
     // 表单验证
     $('#company_form').validate({
+        errorPlacement: function errorPlacement(error, element) {
+            element.closest('.input-box').append(error);
+        },
+        errorElement: 'p',
         rules: {
             company_name: {
+                minlength: 2
+            },
+            founding: {
+                data: true
+            },
+            phone: {
                 required: true,
-                email: true
+                isPhone: true
             }
-        },
-        messages: {
-            company_name: "请输入公司名称"
         }
+    });
+
+    // 联系电话(手机/电话皆可)验证 
+    jQuery.validator.addMethod("isPhone", function (value, element) {
+        var length = value.length;
+        var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/;
+        var tel = /^\d{3,4}-?\d{7,9}$/;
+        return this.optional(element) || tel.test(value) || mobile.test(value);
+    }, "请正确填写您的联系电话");
+
+    $('.btn_forbidden').click(function () {
+        upload0.upload();
     });
 });

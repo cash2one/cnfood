@@ -39,8 +39,10 @@
                 .tips{
                     color: #aeaeae;
                 }
-                .warning{
-                    color: red;
+                .error{
+                    color: red;   
+                }
+                p.error{
                     padding: 6px 0  0 12px;
                 }
                 // 文字输入框

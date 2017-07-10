@@ -130,8 +130,9 @@ header {
       position: relative; }
       .page-content .left .form-group .input-box .tips {
         color: #aeaeae; }
-      .page-content .left .form-group .input-box .warning {
-        color: red;
+      .page-content .left .form-group .input-box .error {
+        color: red; }
+      .page-content .left .form-group .input-box p.error {
         padding: 6px 0  0 12px; }
       .page-content .left .form-group .input-box .text {
         width: 398px; }
