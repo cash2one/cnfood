@@ -8,15 +8,17 @@ require.config({
         "public": "public",
         "mCustomScrollbar": "https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min",
         "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min",
-        "jqthumb": "../static/jqthumb.min"
+        "jqthumb": "../static/jqthumb.min",
+        "common": "common",
+        "html5shiv": "https://cdn.bootcss.com/html5shiv/r29/html5.min"
     },
     shim: {
         "swiper": {
             exports: "swiper"
         },
         "mCustomScrollbar": {
-            deps: ["jquery"],
-            exports: "mCustomScrollbar"
+            exports: "mCustomScrollbar",
+            deps: ["jquery"]
         },
         "jqthumb": {
             deps: ["jquery"]
@@ -24,16 +26,21 @@ require.config({
     }
 });
 
-require(['jquery', 'public', "mCustomScrollbar", "swiper", "jqthumb"], function ($, mypublic, mCustomScrollbar, swiper) {
+require(['jquery', 'public', "mCustomScrollbar", "swiper", "jqthumb", "common", "html5shiv"], function ($, mypublic, mCustomScrollbar, swiper, common) {
 
+    $(".content").mCustomScrollbar({
+        theme: 'my-theme',
+        autoHideScrollbar: true,
+        mouseWheel: {
+            enable: true
+        }
+    });
     // ************首页左边栏滚动条显示*********************
-    // var content = $('.news-l');
-    // var fixedwrap = $('.fixed-wrap');
-    // $(document).on('mouseenter', content, function () {
-
-    // })
+    var content = $('.news-l');
+    var fixedwrap = $('.fixed-wrap');
+    $(document).on('mouseenter', content, function () {}
     // ********************************************************
-    var mySwiper = new Swiper('.swiper-container', {
+    );var mySwiper = new Swiper('.swiper-container', {
         autoplay: 4000,
         loop: true,
         pagination: '.pagination',
@@ -53,47 +60,18 @@ require(['jquery', 'public', "mCustomScrollbar", "swiper", "jqthumb"], function 
     }, function () {
         fixedwrap.css('top', '0');
     });
-
     //文章切换ajax
 
     $('.news-tab').find('li').click(function () {
         var index = $(this).index();
-        $(this).addClass('selected').siblings().removeClass('selected');
         console.log(index);
-        if (index === 0) {
-            $('.origin-news').show();
-            $('.new-news').hide();
-        } else {
-            $('.origin-news').hide();
-            $('.new-news').show();
-            $('.news-list').html('');
-            $('.loading').show();
-            // ajax请求
-        }
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.toggle-box .origin-news').eq(index).addClass('active').siblings().removeClass('active');
+        console.log($('.origin-news').eq(index));
     });
-    // 创建新闻添加
-    function tabsToggle(res) {
-        $.each(res, function (i) {
-            var newsl = $('<div class="news-item"><div class="img img-pt"><a href="javascript:;"><img src="' + res[i].img + '" alt="">' + '</a></div><h1><a href="' + res[i].url + '" target="_blank">' + res[i].title + '</a>' + '</h1><div class="tags tags-pt"><span class="tags-box"></span><div class="time">' + res[i].time + '</div></div></div>');
 
-            $.each(res[i].tags, function (j) {
-                var tags = $('span class="tag">' + res[i].tags[j] + '</span>');
-                newsl.find('.tags-box').append(tags);
-            });
-
-            var newsbox = $('.new-news');
-            newsbox.html('');
-            newsbox.append(newsl);
-        });
-    }
-    // 初始化左侧新闻滚动条
-    $(".content").mCustomScrollbar({
-        theme: 'my-theme',
-        autoHideScrollbar: true,
-        mouseWheel: {
-            enable: true
-        }
-    });
+    //调整图片
+    mypublic.cnfood.jqthumb_img();
 });
 
 // })(jQuery);

@@ -1,6 +1,5 @@
 @import 'base';
 @import 'mixin';
-@import 'header';
 .main-news{
     margin-top: 20px;
     .mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ 
@@ -33,6 +32,7 @@
                 .date{
                     margin-left: -21px;
                     color: $baseColorPreyMid;
+                    font-size: 12px;
                     .iconfont{
                         color: $baseColor;
                         font-size: 12px;
@@ -275,9 +275,10 @@
         ul{
             margin-top: 30px;
             li{
-                width: 30%;
+                width: 50%;
                 height: 30px;
                 float: left;
+                @extend %text-overflow;
             }
         }
     }

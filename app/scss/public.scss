@@ -8,6 +8,7 @@
 @import 'getmore';
 @import 'footer';
 @import 'channel-banner';
+@import 'page-list';
 html,body{
     font-family: "Open Sans",Arial,"Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
     font-size: 14px;
@@ -204,5 +205,15 @@ a{
     }
     .swiper-active-switch{
         opacity: 1;
+    }
+}
+
+// *******************图片hover放大*****************
+.img,.news-img,.cpy-img{
+    .jqthumb{
+        transition: all .4s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }

@@ -102,25 +102,24 @@ define(['jquery'], function ($) {
                 var qrcodeBox = $(this).parent().find('.qrcode-box');
                 qrcodeBox.css('opacity', '0');
             });
+        },
+        jqthumb_img: function jqthumb_img() {
+            var img = $('img');
+            img.each(function () {
+                var _this = $(this);
+                if (_this.attr('data-jqthumb-width')) {
+                    _this.jqthumb({
+                        width: _this.attr('data-jqthumb-width'),
+                        height: _this.attr('data-jqthumb-height'),
+                        reinit: true,
+                        after: function after(imgobj) {
+                            imgobj.css('opacity', '0').animate({ opacity: 1 });
+                        }
+                    });
+                }
+            });
         }
     };
-    $(function () {
-        // tops
-        var tops = $('.tops-box');
-        cnfood.scrollDirection(function () {
-            tops.css('top', '50px');
-        }, function () {
-            tops.css('top', '10px');
-        });
-        // 初始化上下滚动事件
-        cnfood.fixedBox($('.tops-box'), $('.tops-box')
-        // 切换logo
-        );cnfood.hideLogo();
-        // 初始化切换tops
-        cnfood.tabsToggle($('.top-name'), $('.toplist-toggle .top-list-box'), 'selected');
-        //header中的鼠标悬浮出现二维码
-        // cnfood.hoverHeadToggle();
-    });
 
     return {
         cnfood: cnfood

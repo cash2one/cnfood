@@ -1,0 +1,219 @@
+@import 'header-bottom-line';
+@import "mixin";
+@import 'base';
+@import "top-list.scss";
+@import "page-list.scss";
+.search{
+    .search-l{
+        h1{
+            font-size: 15px;
+            border-bottom: 1px solid $baseColor;
+        }
+    }
+}
+.page-content{
+    .left{
+        padding-left: 34px;
+        padding-top: 18px;
+        .news-item{
+            h1{
+                font-weight: normal;
+            }
+        }
+        .form-group{
+            margin-bottom: 20px;
+            label{
+                display: inline-block;
+                width: 82px;
+                float: left;
+                margin-top: 6px;
+            }
+            %input{
+                border: 1px solid #dddddd;
+                padding:0 12px;
+                height: 38px;
+            }
+            .input-box{
+                display: inline-block;
+                position: relative;
+                .tips{
+                    color: #aeaeae;
+                }
+                .warning{
+                    color: red;
+                    padding: 6px 0  0 12px;
+                }
+                // 文字输入框
+                .text{
+                    @extend %input;
+                    width: 398px;
+                }
+                // 上传图片
+                .img_list{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 600px;
+                    @extend .clearfix;
+                    %img{
+                        display: inline-block;
+                        text-align: center;
+                        width: 78px;
+                        height: 78px;
+                        line-height: 78px;
+                        border: 1px solid #dddddd;
+                        overflow: hidden;
+                    }
+                    .tip{
+                        color: #adadad;
+                        float: left;
+                        .add{
+                            vertical-align: middle;
+                            margin-right: 12px;
+                            @extend %img;
+                            font-size: 52px;
+                            color: #adadad;
+                            cursor: pointer;
+                        }
+                        .webuploader-pick{
+                            background: transparent;
+                            position: relative;
+                            display: inline-block;
+                            cursor: pointer;
+                            padding: 0;
+                            color: #adadad;
+                            text-align: center;
+                            overflow: hidden;
+                            width: 76px;
+                            height: 76px;
+                            line-height: 76px;
+                        }
+                    }
+                    .upload-list{
+                        float: left;
+                        @extend .clearfix;
+                        .img{
+                            float: left;
+                            position: relative;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            @extend %img;
+                            .file-panel{
+                                position: absolute;
+                                height: 0;
+                                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+                                background: rgba( 0, 0, 0, 0.5 );
+                                width: 100%;
+                                top: 0;
+                                left: 0;
+                                overflow: hidden;
+                                z-index: 300;
+                                color: #ffffff;
+                                .iconfont{
+                                    cursor: pointer;
+                                    margin: 0 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+                // 日期选择
+                .date{
+                    width: 178px;
+                    @extend %input;
+                    &+.icon-rili{
+                        position: absolute;
+                        right: 8px;
+                        bottom: 5px;
+                        color: #d40201;
+                    }
+                }
+                select{
+                    @extend %input;
+                    width: 178px;
+                }
+                .textarea{
+                    vertical-align: top;
+                    @extend %input;
+                    padding: 12px;
+                    height: 118px;
+                    width: 648px;
+                    resize: none;
+                }
+            }
+            .vertop{
+                vertical-align: top;
+            }
+        }
+        %btn{
+            margin: 56px auto;
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: $baseColor;
+            color: #ffffff;
+        }
+        .btn_primary{
+            @extend %btn;
+            cursor: pointer;
+            &:active{
+                background: #0e69a7;
+            }
+        }
+        .btn_forbidden{
+            @extend %btn;
+            cursor: not-allowed;
+        }
+    }
+    .right{
+        .ad{
+            margin-bottom: 20px;
+        }
+        .panel-title{
+            .pagination{
+                float: right;
+                position: static;
+                .swiper-pagination-switch{
+                    background: $baseColor;
+                }
+            }
+        }
+        .scroll-focus{
+            margin-top: 20px;
+            .swiper-container{
+                height: 400px;
+                ul{
+                    .img{
+                        float: left;
+                        margin: 0px 15px 15px 0;
+                        text-align: center;
+                        width: 85px;
+                        height: 120px;
+                        display: block;
+                        background: none;
+                        overflow: hidden;
+                        position: relative; 
+                        &:hover{
+                            opacity: .8;
+                        }                  
+                        img{
+                            width: 85px;
+                            height: 85px;
+                            border-radius: 50%;
+                            display: block;
+                        }
+                        .name{
+                            height: 30px;
+                            line-height: 35px;
+                            font-size: 13px;
+                            background: none;
+                            margin-top: -3px;
+                            color: #333;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

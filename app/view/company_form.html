@@ -1,0 +1,243 @@
+<include "../template/public_header.html">
+
+<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/company_form.css">
+<!--webuploader插件-->
+<link rel="stylesheet" href="../static/webuploader.css">
+<script src="../static/webuploader.min.js"></script>
+<!--日历js-->
+<script type="text/javascript" src="../static/jscal2.js"></script>
+<script type="text/javascript" src="../static/cn.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/jscal2.css"/> 
+<link rel="stylesheet" type="text/css" href="../static/border-radius.css"/> 
+<!--验证插件-->
+<!--<script src="https://cdn.bootcss.com/validator/8.0.0/validator.min.js"></script>
+<script src="../js/message.cn.js"></script>-->
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<!--本页js-->
+<script src="../js/company_form.js"></script>
+
+</head>
+<body>
+    <include "../template/top.html">
+    <include "../template/header.html">
+    <div class="search">
+        <div class="main clearfix">
+            <div class="search-l">
+                <h1>企业信息</h1>
+            </div>
+            <div class="search-r">
+                <input type="text" placeholder="请输入关键词">
+                <button>
+                    <i class="iconfont icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="main">
+            <div class="left">
+                <form action="" id="company_form">
+                    <!--公司名称-->
+                    <div class="form-group">
+                        <label for="company_name">公司名称：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入公司名称" class="text" id="company_name">
+                            <!--<p class="warning">请输入公司名称</p>-->
+                        </div>
+                    </div>
+                    <!--公司简称-->
+                    <div class="form-group">
+                        <label for="company_alias">公司简称：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入公司简称" class="text" id="company_alias">
+                        </div>
+                    </div>
+                    <!--英文名称-->
+                    <div class="form-group">
+                        <label for="company_enname">英文名称：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入英文名称" class="text" id="company_enname">
+                        </div>
+                    </div>
+                    <!--公司logo-->
+                    <div class="form-group">
+                        <label for="">公司logo：</label>
+                        <div class="input-box">
+                            <div class="img_list">
+                                <div class="upload-list" id="upload-list0"></div>
+                                <div class="tip">
+                                    <div class="add" id="logo">+</div>注：推荐宽高150×150
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--联系人-->
+                    <div class="form-group">
+                        <label for="">联系人：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入联系人" class="text">
+                        </div>
+                    </div>
+                    <!--成立时间-->
+                    <div class="form-group">
+                        <label for="">成立时间：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入成立时间" class="date" id="founding">
+                            <i class="iconfont icon-rili"></i>
+                        </div>
+                    </div>
+                    <!--官方网址-->
+                    <div class="form-group">
+                        <label for="">官方网址：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入官方网址" class="text">
+                        </div>
+                    </div>
+                    <!--联系电话-->
+                    <div class="form-group">
+                        <label for="">联系电话：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入联系电话" class="text">
+                        </div>
+                    </div>
+                    <!--所在地区-->
+                    <div class="form-group">
+                        <label for="">所在地区：</label>
+                        <div class="input-box">
+                            <select name="" id="">
+                                <option value="" selected>请选择</option>
+                                <option value="1">第一</option>
+                                <option value="2">第二</option>
+                                <option value="3">第三</option>
+                                <option value="4">第四</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--详细地址-->
+                    <div class="form-group">
+                        <label for="">详细地址：</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="请输入详细地址" class="text">
+                        </div>
+                    </div>
+                    <!--行业分类-->
+                    <div class="form-group">
+                        <label for="">行业分类：</label>
+                        <div class="input-box">
+                            <select name="" id="">
+                                <option value="" selected>请选择</option>
+                                <option value="1">第一</option>
+                                <option value="2">第二</option>
+                                <option value="3">第三</option>
+                                <option value="4">第四</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--主营业务-->
+                    <div class="form-group">
+                        <label for="">主营业务：</label>
+                        <div class="input-box vertop">
+                            <textarea  placeholder="请输入主营业务" class="textarea"></textarea>
+                        </div>
+                    </div>
+                    <!--发展历程-->
+                    <div class="form-group">
+                        <label for="">发展历程：</label>
+                        <div class="input-box vertop">
+                            <textarea  placeholder="请输入发展历程" class="textarea"></textarea>
+                            <p class="tips">注：填写规范：#2016-6-29 XXXX公司成立#  #2017-6-29 XXXX公司成功上市#</p>
+                        </div>
+                    </div>
+                    <!--企业风采-->
+                    <div class="form-group">
+                        <label for="">企业风采：</label>
+                        <div class="input-box">
+                            <div class="img_list">
+                                <div class="upload-list" id="upload-list1">
+                                    
+                                </div>
+                                <div class="tip">
+                                    <div class="add" id="fengcai">+</div>注：最多可以同时上传6张
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--品牌-->
+                    <div class="form-group">
+                        <label for="">品牌：</label>
+                        <div class="input-box">
+                            <div class="img_list">
+                                <div class="upload-list" id="upload-list2">
+                                    
+                                </div>
+                                <div class="tip">
+                                    <div class="add" id="brand">+</div>注：最多可以同时上传6张
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--公司简介-->
+                    <div class="form-group">
+                        <label for="">公司简介：</label>
+                        <div class="input-box vertop">
+                            <textarea  placeholder="请输入公司简介" class="textarea"></textarea>
+                        </div>
+                    </div>
+                    <!--end-->
+                </form>
+                <div class="btn_forbidden">提交</div>
+            </div>
+            <div class="right">
+                <!--广告-->
+                <div class="ad">
+                    <img src="../images/0f0005w9PFlEDxmOEZ5Wjf.jpg" alt="">
+                </div>
+                <!--广告结束-->
+                <!--tops开始-->
+                <div class="tops-box">
+                    <!--tops tab页-->
+                    <h1 class="panel-title panel-title-bottom-line">TOPS 
+                        <div class="box-r">
+                            <span class="top-name selected">日排行</span><span class="split">/</span>
+                            <span class="top-name">周排行</span><span class="split">/</span>
+                            <span class="top-name">原创</span>
+                        </div>
+                    </h1>
+                    <!--结束-->
+                    <!--切换盒子-->
+                    <div class="toplist-toggle">
+                        <include "../template/top-list.html">
+                        <include "../template/top-list-hide.html">
+                        <include "../template/top-list-hide.html">
+                    </div>
+                    <!--结束-->
+                    <!--侧边栏新闻-->
+                    <div class="item">
+                        <h1 class="panel-title">巨头<a href="javascript:;" class="more">MORE+</a></h1>
+                        <div class="panel panel-prey">
+                            <div class="news-img">
+                                <img src="../images/20170612@227627.jpg" alt="" style="height:100%;width:100%;">
+                            </div>
+                            <a href="#" class="news">我看到你福覅几句为人陪我二君恩错承诺你额fin发您肉veonin犯法</a>
+                        </div>
+                        <ul class="news-list">
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                            <li><a href="#">2017中国基金小镇高峰论坛@青岛【现场直播】</a></li>
+                            <li><a href="#">第五届中关村天使投资论坛暨颁奖典礼</a></li>
+                        </ul>
+                    </div>
+                    <!--结束-->
+                </div>
+                <!--tops结束-->
+            </div>
+        </div>
+    </div>
+    <include "../template/footer.html">
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../js/public.js"></script>-->
+</body>
+</html>

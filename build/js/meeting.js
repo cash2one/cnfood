@@ -4,16 +4,22 @@ require.config({
     paths: {
         "jquery": "https://cdn.bootcss.com/jquery/1.8.2/jquery.min",
         "public": "public",
-        "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min"
+        "swiper": "https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min",
+        "jqthumb": "../static/jqthumb.min",
+        "common": "common",
+        "html5shiv": "https://cdn.bootcss.com/html5shiv/r29/html5.min"
     },
     shim: {
         "swiper": {
             exports: "swiper"
+        },
+        "jqthumb": {
+            deps: ["jquery"]
         }
     }
 });
 
-require(['jquery', 'public', "swiper"], function ($, mypublic, swiper) {
+require(['jquery', 'public', "swiper", "common", "html5shiv"], function ($, mypublic, swiper) {
     $(function () {
         var mySwiper = $('.swiper-container').swiper({
             autoplay: 3000,
@@ -26,5 +32,7 @@ require(['jquery', 'public', "swiper"], function ($, mypublic, swiper) {
         mypublic.cnfood.initSwiperArrow(mySwiper);
         // 鼠标经过分页器换页
         mypublic.cnfood.paginationHover(mySwiper);
+        //调整图片
+        mypublic.cnfood.jqthumb_img();
     });
 });
