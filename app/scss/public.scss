@@ -20,6 +20,9 @@ div{
 *{
     box-sizing: border-box;
 }
+input{
+    font-family: "Open Sans",Arial,"Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;    
+}
 // **********hover过度效果***************
 a{
     transition: all .2s ease;
@@ -215,5 +218,94 @@ a{
         &:hover{
             transform: scale(1.2);
         }
+    }
+}
+// 遮罩层
+.MASK{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(#000000,.6);
+    z-index: 200;
+}
+// 提建议框
+.advise-box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:  auto;
+    z-index: 300;
+    width: 600px;
+    height: 320px;
+    background: #ffffff;
+    h1.title{
+        height: 49px;
+        line-height: 49px;
+        background: #0e5f96;
+        padding: 0 14px;
+        color: #ffffff;
+        .exit{
+            float: right;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    .adv-form{
+        padding: 26px 0 0 20px;
+        .form-group{
+            @extend .clearfix;
+            margin-bottom: 15px;
+            %input{
+                height: 32px;
+                border: 1px solid #dddddd;
+            }
+            .input-box{
+                display: inline-block;
+            }
+            label{
+                vertical-align: top;
+                display: inline-block;
+                width: 80px;
+                text-align: right;
+            }
+            input{
+                width: 148px;
+                @extend %input;
+            }
+            select{
+                width: 116px;
+                @extend %input;
+            }
+            textarea{
+                width: 100%;
+                height: 68px;
+                resize: none;
+                border: 1px solid #dddddd;
+            }
+            .left-input,.right-group{
+                float: left;
+            }
+        }
+        .ads-submit{
+            display: none;
+        }
+    }
+
+    .submit-btn{
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        background: #0e5f96;
+        color: #ffffff;
+        margin: 18px auto;
+        text-align: center;
+        cursor: pointer;
     }
 }

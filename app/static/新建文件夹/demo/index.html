@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<title>jQuery validation plug-in - main demo</title>
 	<link rel="stylesheet" href="css/screen.css">
-	<script src="../lib/jquery.js"></script>
-	<script src="../dist/jquery.validate.js"></script>
+	<script src="../lib/jquery-1.8.3.js"></script>
+	<!--<script src="../lib/jquery.js"></script>-->
+	<script src="../dist/jquery.validate.min.js"></script>
 	<script>
 	$.validator.setDefaults({
 		submitHandler: function() {
@@ -146,7 +147,7 @@
 			<legend>Validating a complete form</legend>
 			<p>
 				<label for="firstname">Firstname</label>
-				<input id="firstname" name="firstname" type="text">
+				<input id="firstname"  type="text">
 			</p>
 			<p>
 				<label for="lastname">Lastname</label>

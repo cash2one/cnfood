@@ -16,6 +16,7 @@ $(function () {
             var upload = this.create();
             this.add(upload);
             this.delete(upload);
+            return upload;
         },
         create: function () {
             var pick = this.pick;
@@ -137,15 +138,12 @@ $(function () {
         },
         errorElement: 'p',
         rules: {
-            company_name: {
-                minlength:2
-            },
             founding: {
                 data: true
             },
-            phone:{
-                required:true,
-                isPhone:true
+            phone: {
+                required: true,
+                isPhone: true
             }
         }
     });
@@ -159,9 +157,10 @@ $(function () {
 
     }, "请正确填写您的联系电话");
 
-    $('.btn_forbidden').click(function(){
+    $('.btn_forbidden').click(function () {
         upload0.upload();
     })
-
+    // 省级联动
+    $("#distpicker1").distpicker();
 })
 

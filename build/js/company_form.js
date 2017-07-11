@@ -18,6 +18,7 @@ $(function () {
             var upload = this.create();
             this.add(upload);
             this.delete(upload);
+            return upload;
         },
         create: function create() {
             var pick = this.pick;
@@ -129,9 +130,6 @@ $(function () {
         },
         errorElement: 'p',
         rules: {
-            company_name: {
-                minlength: 2
-            },
             founding: {
                 data: true
             },
@@ -152,5 +150,7 @@ $(function () {
 
     $('.btn_forbidden').click(function () {
         upload0.upload();
-    });
+    }
+    // 省级联动
+    );$("#distpicker1").distpicker();
 });

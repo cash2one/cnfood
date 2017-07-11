@@ -1,6 +1,6 @@
 <include "../template/public_header.html">
 
-<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
 <link rel="stylesheet" href="../css/company_form.css">
 <!--webuploader插件-->
 <link rel="stylesheet" href="../static/webuploader.css">
@@ -13,7 +13,10 @@
 <!--验证插件-->
 <script src="../static/jquery.validate.min.js"></script>
 <script src="../static/message.cn.js"></script>
-<!--本页js-->
+<!--省级联动-->
+<script src="../static/distpicker.data.js"></script>
+<script src="../static/distpicker.js"></script>
+ <!--本页js-->
 <script src="../js/company_form.js"></script>
 
 </head>
@@ -41,22 +44,21 @@
                     <div class="form-group">
                         <label for="company_name">公司名称：</label>
                         <div class="input-box">
-                            <input type="text" placeholder="请输入公司名称" class="text" id="company_name">
-                            
+                            <input type="text" placeholder="请输入公司名称" class="text" name="company_name" required>
                         </div>
                     </div>
                     <!--公司简称-->
                     <div class="form-group">
                         <label for="company_alias">公司简称：</label>
                         <div class="input-box">
-                            <input type="text" placeholder="请输入公司简称" class="text" id="company_alias">
+                            <input type="text" placeholder="请输入公司简称" class="text" name="company_alias" required>
                         </div>
                     </div>
                     <!--英文名称-->
                     <div class="form-group">
                         <label for="company_enname">英文名称：</label>
                         <div class="input-box">
-                            <input type="text" placeholder="请输入英文名称" class="text" id="company_enname">
+                            <input type="text" placeholder="请输入英文名称" class="text" name="company_enname" required>
                         </div>
                     </div>
                     <!--公司logo-->
@@ -75,7 +77,7 @@
                     <div class="form-group">
                         <label for="">联系人：</label>
                         <div class="input-box">
-                            <input type="text" placeholder="请输入联系人" class="text">
+                            <input type="text" placeholder="请输入联系人" class="text" required>
                         </div>
                     </div>
                     <!--成立时间-->
@@ -97,20 +99,18 @@
                     <div class="form-group">
                         <label for="">联系电话：</label>
                         <div class="input-box">
-                            <input type="text" placeholder="请输入联系电话" class="text" id="phone">
+                            <input type="text" placeholder="请输入联系电话" class="text" name="phone">
                         </div>
                     </div>
                     <!--所在地区-->
                     <div class="form-group">
                         <label for="">所在地区：</label>
                         <div class="input-box">
-                            <select name="" id="">
-                                <option value="" selected>请选择</option>
-                                <option value="1">第一</option>
-                                <option value="2">第二</option>
-                                <option value="3">第三</option>
-                                <option value="4">第四</option>
-                            </select>
+                            <div id="distpicker1">
+                                <select></select>
+                                <select></select>
+                                <select></select>
+                            </div>
                         </div>
                     </div>
                     <!--详细地址-->
@@ -186,8 +186,8 @@
                         </div>
                     </div>
                     <!--end-->
+                    <input type="submit" value="submit">
                 </form>
-                <div class="btn_forbidden">提交</div>
             </div>
             <div class="right">
                 <!--广告-->
@@ -237,5 +237,68 @@
     <include "../template/footer.html">
     <!--<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script src="../js/public.js"></script>-->
+    <!--提意见-->
+    <div class="MASK"></div>
+    <div class="advise-box">
+        <h1 class="title">意见反馈<span class="exit">×</span></h1>
+        <form action="" class="adv-form">
+            <div class="form-group">
+                <label for="">反馈类型：</label>
+                <div class="input-box">
+                    <select name="" id="">
+                        <option value="">文字错误</option>
+                        <option value="">技术错误</option>
+                        <option value="">数据错误</option>
+                        <option value="">其他错误</option>
+                        <option value="">意见建议</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">问题描述：</label>
+                <div class="input-box"><textarea rows="20" cols="60"></textarea></div>
+            </div>
+            <div class="form-group">
+                <div class="left-input">
+                    <label for="">邮箱：</label>
+                    <div class="input-box"><input type="text"></div>
+                </div>
+                <div class="right-input">
+                    <label for="">电话：</label>
+                    <div class="input-box"><input type="text"></div>
+                </div>
+            </div>
+            <input type="submit" id="ads-submit" class="ads-submit">
+        </form>
+        <div class="submit-btn">提交</div>
+    </div>
+    <!--end-->
+    <script>
+        $(function(){
+            var mask = $('.MASK');
+            var ads = $('.advise-box');
+            $('.submit-btn').click(function(){
+                $('.ads-submit').click();
+            })
+            $('.icon-tijianyi').click(function(){
+                if(mask.is(':hidden')){
+                    mask.show();
+                    ads.show();
+                }
+            })
+            mask.click(function(){
+                hideMASK(ads);
+            });
+            ads.find('.exit').click(function(){
+                hideMASK(ads);
+            });
+        })
+        function hideMASK(el){
+            var mask = $('.MASK');
+            mask.hide();
+            el.hide();
+        }
+    
+    </script>
 </body>
 </html>

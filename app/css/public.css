@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.clearfix:after, .news-item:after, .panel:after, .page-content:after {
+.clearfix:after, .news-item:after, .panel:after, .page-content:after, .advise-box .adv-form .form-group:after {
   content: '';
   display: block;
   clear: both;
@@ -194,7 +194,7 @@ header {
 .search .search-left-r {
   margin-top: 6px; }
 
-.clearfix:after, .news-item:after, .panel:after, .page-content:after {
+.clearfix:after, .news-item:after, .panel:after, .page-content:after, .advise-box .adv-form .form-group:after {
   content: '';
   display: block;
   clear: both;
@@ -355,7 +355,7 @@ footer {
       footer .footer .links span {
         padding: 0 15px; }
 
-.clearfix:after, .news-item:after, .panel:after, .page-content:after {
+.clearfix:after, .news-item:after, .panel:after, .page-content:after, .advise-box .adv-form .form-group:after {
   content: '';
   display: block;
   clear: both;
@@ -459,6 +459,9 @@ div {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+input {
+  font-family: "Open Sans",Arial,"Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif; }
 
 a {
   -webkit-transition: all .2s ease;
@@ -614,3 +617,73 @@ a {
   .img .jqthumb:hover, .news-img .jqthumb:hover, .cpy-img .jqthumb:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+
+.MASK {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200; }
+
+.advise-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  width: 600px;
+  height: 320px;
+  background: #ffffff; }
+  .advise-box h1.title {
+    height: 49px;
+    line-height: 49px;
+    background: #0e5f96;
+    padding: 0 14px;
+    color: #ffffff; }
+    .advise-box h1.title .exit {
+      float: right;
+      font-size: 30px;
+      cursor: pointer; }
+  .advise-box .adv-form {
+    padding: 26px 0 0 20px; }
+    .advise-box .adv-form .form-group {
+      margin-bottom: 15px; }
+      .advise-box .adv-form .form-group input, .advise-box .adv-form .form-group select {
+        height: 32px;
+        border: 1px solid #dddddd; }
+      .advise-box .adv-form .form-group .input-box {
+        display: inline-block; }
+      .advise-box .adv-form .form-group label {
+        vertical-align: top;
+        display: inline-block;
+        width: 80px;
+        text-align: right; }
+      .advise-box .adv-form .form-group input {
+        width: 148px; }
+      .advise-box .adv-form .form-group select {
+        width: 116px; }
+      .advise-box .adv-form .form-group textarea {
+        width: 100%;
+        height: 68px;
+        resize: none;
+        border: 1px solid #dddddd; }
+      .advise-box .adv-form .form-group .left-input, .advise-box .adv-form .form-group .right-group {
+        float: left; }
+    .advise-box .adv-form .ads-submit {
+      display: none; }
+  .advise-box .submit-btn {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    background: #0e5f96;
+    color: #ffffff;
+    margin: 18px auto;
+    text-align: center;
+    cursor: pointer; }
