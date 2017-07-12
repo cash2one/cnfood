@@ -10,6 +10,7 @@ $(function () {
         this.pick = config.pick;
         this.fileNumLimit = config.fileNumLimit;
         this.uploadlist = config.uploadlist;
+        this.formData = config.formData;
     };
     $webuploader.prototype = {
         init: function () {
@@ -20,12 +21,14 @@ $(function () {
         },
         create: function () {
             var pick = this.pick;
+            var fileNumLimit = this.fileNumLimit;
+            var formData = this.formData;
             var upload = WebUploader.create({
                 // swf文件路径
                 swf: '../static/Uploader.swf',
 
                 // 文件接收服务端。
-                server: 'http://webuploader.duapp.com/server/fileupload.php',
+                server: '../upload.php',
 
                 // 选择文件的按钮。可选。
                 // 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -45,7 +48,8 @@ $(function () {
                     // 是否允许裁剪。
                     crop: true
                 },
-                fileNumLimit: 6
+                fileNumLimit: fileNumLimit,
+                formData:formData
             });
             return upload;
         },
@@ -105,18 +109,35 @@ $(function () {
     var upload0 = new $webuploader({
         pick: '#logo',
         fileNumLimit: 1,
-        uploadlist: '#upload-list0'
+        uploadlist: '#upload-list0',
+        fromData:{
+            type:'thumb'
+        }
     }).init();
     var upload1 = new $webuploader({
         pick: '#fengcai',
-        fileNumLimit: 1,
-        uploadlist: '#upload-list1'
+        fileNumLimit: 6,
+        uploadlist: '#upload-list1',
+        fromData:{
+            type:'company_style'
+        }
     }).init();
     var upload2 = new $webuploader({
         pick: '#brand',
-        fileNumLimit: 1,
-        uploadlist: '#upload-list2'
+        fileNumLimit: 6,
+        uploadlist: '#upload-list2',
+        fromData:{
+            type:'brand'
+        }
     }).init();
+
+
+    $('#submit').click(function(){
+        upload0.upload();
+        upload1.upload();
+        upload2.upload();
+    })
+
 
 
 

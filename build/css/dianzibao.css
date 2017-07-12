@@ -54,9 +54,12 @@
     overflow: hidden; }
     .newspaper .paper .paper-l {
       float: left;
+      position: relative;
       border: 2px solid #dadada;
       margin-right: 31px;
       overflow: hidden; }
+      .newspaper .paper .paper-l img {
+        width: 370px; }
     .newspaper .paper .paper-m {
       float: left;
       width: 460px; }
